@@ -2375,10 +2375,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2122675563}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 550ace7509883ca49a8d42b0307afb7e, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ba531d54e7e54c488d5556e3121a734, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cenaDoJogo: 
+  cenaDoJogo: Jogo_Placeholder
   painelMenuInicial: {fileID: 160277334}
   painelMenuOpcoes: {fileID: 1745386050}
 --- !u!4 &2122675565
