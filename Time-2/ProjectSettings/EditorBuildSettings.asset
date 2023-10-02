@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu_Principal.unity
     guid: 75d09553b1c36984485578c4fcb5bbe5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Fase_1.unity
     guid: 7a4873d446873464d83c13257b077630
+  - enabled: 1
+    path: Assets/Scenes/Jogo_Placeholder.unity
+    guid: 7099b821d32569546ad8ff1361a470b1
   m_configObjects: {}
