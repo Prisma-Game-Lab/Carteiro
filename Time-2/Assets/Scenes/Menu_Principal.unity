@@ -2378,7 +2378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ba531d54e7e54c488d5556e3121a734, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cenaDoJogo: Jogo_Placeholder
+  cenaDoJogo: Tela_Carta
   painelMenuInicial: {fileID: 160277334}
   painelMenuOpcoes: {fileID: 1745386050}
 --- !u!4 &2122675565
