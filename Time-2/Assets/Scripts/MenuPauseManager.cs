@@ -30,6 +30,7 @@ public class MenuPauseManager : MonoBehaviour
     void Despausar()
     {
         MenuPause.SetActive(false);
+        Time.timeScale = 1.0f;
         JogoEstaPausado = false;
     }
 
@@ -60,6 +61,7 @@ public class MenuPauseManager : MonoBehaviour
 
     public void Sair()
     {
+        Despausar();
         SceneManager.LoadScene(cenaDoJogo);
     }
 }
