@@ -5,25 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class MenuPrincipalManager : MonoBehaviour
 {
-    [SerializeField] private string cenaDoJogo;
+    [SerializeField] private string cenaAtual;
+    [SerializeField] private string cenaDoJogoJogar;
+    [SerializeField] private string cenaDoJogoOpcoes;
     [SerializeField] private GameObject painelMenuInicial;
     [SerializeField] private GameObject painelMenuOpcoes;
+    public static string cenaRetorno;
     public void Jogar()
     {
-        SceneManager.LoadScene(cenaDoJogo);
+        SceneManager.LoadScene(cenaDoJogoJogar);
     }
 
     public void AbrirOpcoes()
     {
-        painelMenuInicial.SetActive(false);
-        painelMenuOpcoes.SetActive(true);
+        cenaRetorno = cenaAtual;
+        SceneManager.LoadScene(cenaDoJogoOpcoes);
     }
 
-    public void FecharOpcoes()
-    {        
-        painelMenuOpcoes.SetActive(false);
-        painelMenuInicial.SetActive(true);
-    }
 
     public void Sair()
     {
