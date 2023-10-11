@@ -10,8 +10,8 @@ public class MenuPauseManager : MonoBehaviour
     [SerializeField] private string cenaDoJogoSair;
     [SerializeField] private string cenaDoJogoOpcoes;
     [SerializeField] private GameObject MenuPause;
+    [SerializeField] private GameObject BotaoPause;
     [SerializeField] private GameObject painelMenuPause;
-    [SerializeField] private GameObject painelMenuOpcoes;
 
     public static bool JogoEstaPausado = false;
 
@@ -32,6 +32,7 @@ public class MenuPauseManager : MonoBehaviour
     void Despausar()
     {
         MenuPause.SetActive(false);
+        BotaoPause.SetActive(true);
         Time.timeScale = 1.0f;
         JogoEstaPausado = false;
     }
@@ -39,26 +40,31 @@ public class MenuPauseManager : MonoBehaviour
     void Pausar()
     {
         MenuPause.SetActive(true);
+        BotaoPause.SetActive(false);
         Time.timeScale = 0f;
         JogoEstaPausado = true;
     }
 
     //Botões
+    public void BotaoPausar()
+    {
+        Pausar();
+    }
     public void Retornar()
     {
-        MenuPause.SetActive(false);
+        Despausar();
     }
 
     public void AbrirOpcoes()
     {
-        Despausar();
         MenuPrincipalManager.cenaRetorno = cenaAtual;
         SceneManager.LoadScene(cenaDoJogoOpcoes);
+        Despausar();
     }
 
     public void Sair()
     {
-        Despausar();
         SceneManager.LoadScene(cenaDoJogoSair);
+        Despausar();
     }
 }
