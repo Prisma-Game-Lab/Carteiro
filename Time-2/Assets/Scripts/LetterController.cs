@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class LetterController : MonoBehaviour
 {
-    public float speed;
-
-    // Update is called once per frame
-    void Update()
+    public int life;
+    // Start is called before the first frame update
+    void Start()
     {
-        moveCharacter(new Vector2(0, 1));
+        life = 10;
     }
 
-    void moveCharacter(Vector2 direction)
+    // Update is called once per frame
+    private void OnMouseDown()
     {
-        transform.Translate(direction * speed * Time.deltaTime);
+        life--;
+        print("Ai ai socorro meu deus");
     }
 }
