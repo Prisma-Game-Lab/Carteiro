@@ -4,17 +4,31 @@ using UnityEngine;
 
 public class LetterController : MonoBehaviour
 {
-    public int life;
+    public int shadow_position;
+    public int lives;
     // Start is called before the first frame update
     void Start()
     {
-        life = 10;
+        lives = 2;
+        shadow_position = 0;
     }
 
-    // Update is called once per frame
+    private void Update()
+    {
+        if (shadow_position == 0)
+        {
+            if(lives == 0)
+            {
+                //Perdeu o jogo
+            }
+            lives -= 1;
+            shadow_position = 10;
+        }
+    }
+
     private void OnMouseDown()
     {
-        life--;
+        shadow_position--;
         print("Ai ai socorro meu deus");
     }
 }
