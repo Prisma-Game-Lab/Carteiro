@@ -29,6 +29,5 @@ public class LetterController : MonoBehaviour
     private void OnMouseDown()
     {
         shadow_position--;
-        print("Ai ai socorro meu deus");
     }
 }
