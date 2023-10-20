@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6403fca14f4e3ec47bd93f2d13ccdf9d
+guid: b7f0bd44f03ac15449d1bd7e1485f2cd
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,8 +9,10 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Great Vibes
-  fallbackFontReferences: []
+  - Courier Prime
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 117705ccdd6b21b4e96e70012a3feda5, type: 3}
+  - {fileID: 12800000, guid: 808ec13570b27b840b058c7920428ab1, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
