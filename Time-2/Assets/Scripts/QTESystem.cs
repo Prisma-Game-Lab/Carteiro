@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class QTESystem : MonoBehaviour
 {
-    public GameObject DisplayBox;
-    public GameObject PassBox;
+    [SerializeField] private GameObject DisplayBox;
+    [SerializeField] private GameObject PassBox;
     public int QTEGen;
     public int WaitingForKey;
     public int CorrectKey;
@@ -24,22 +23,22 @@ public class QTESystem : MonoBehaviour
             if (QTEGen == 1) // W
             {
                 WaitingForKey = 1;
-                DisplayBox.GetComponent<TMPro.TextMeshProUGUI>().text = "[W]";
+                DisplayBox.GetComponent<Text>().text = "[W]";
             }
-            if (QTEGen == 2) // A
+            if (QTEGen == 1) // A
             {
                 WaitingForKey = 1;
-                DisplayBox.GetComponent<TMPro.TextMeshProUGUI>().text = "[A]";
+                DisplayBox.GetComponent<Text>().text = "[A]";
             }
-            if (QTEGen == 3) // S
+            if (QTEGen == 1) // S
             {
                 WaitingForKey = 1;
-                DisplayBox.GetComponent<TMPro.TextMeshProUGUI>().text = "[S]";
+                DisplayBox.GetComponent<Text>().text = "[S]";
             }
-            if (QTEGen == 4) // D
+            if (QTEGen == 1) // D
             {
                 WaitingForKey = 1;
-                DisplayBox.GetComponent<TMPro.TextMeshProUGUI>().text = "[D]";
+                DisplayBox.GetComponent<Text>().text = "[D]";
             }
         }
 
@@ -59,7 +58,7 @@ public class QTESystem : MonoBehaviour
                 }
             }
         }
-        if (QTEGen == 2)
+        if (QTEGen == 1)
         {
             if (Input.anyKeyDown)
             {
@@ -75,7 +74,7 @@ public class QTESystem : MonoBehaviour
                 }
             }
         }
-        if (QTEGen == 3)
+        if (QTEGen == 1)
         {
             if (Input.anyKeyDown)
             {
@@ -91,7 +90,7 @@ public class QTESystem : MonoBehaviour
                 }
             }
         }
-        if (QTEGen == 4)
+        if (QTEGen == 1)
         {
             if (Input.anyKeyDown)
             {
@@ -115,11 +114,11 @@ public class QTESystem : MonoBehaviour
         if (CorrectKey == 1)
         {
             CountingDown = 2;
-            PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "Sucesso!";
+            PassBox.GetComponent<Text>().text = "Sucesso!";
             yield return new WaitForSeconds(1.5f);
             CorrectKey = 0;
-            PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "";
-            DisplayBox.GetComponent<TMPro.TextMeshProUGUI>().text = "";
+            PassBox.GetComponent<Text>().text = "";
+            DisplayBox.GetComponent<Text>().text = "";
             yield return new WaitForSeconds(1.5f);
             WaitingForKey = 0;
             CountingDown = 1;
@@ -128,11 +127,11 @@ public class QTESystem : MonoBehaviour
         if (CorrectKey == 2)
         {
             CountingDown = 2;
-            PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "Falha!";
+            PassBox.GetComponent<Text>().text = "Falha!";
             yield return new WaitForSeconds(1.5f);
             CorrectKey = 0;
-            PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "";
-            DisplayBox.GetComponent<TMPro.TextMeshProUGUI>().text = "";
+            PassBox.GetComponent<Text>().text = "";
+            DisplayBox.GetComponent<Text>().text = "";
             yield return new WaitForSeconds(1.5f);
             WaitingForKey = 0;
             CountingDown = 1;
@@ -146,11 +145,11 @@ public class QTESystem : MonoBehaviour
         {
             QTEGen = 8;
             CountingDown = 2;
-            PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "Falha!";
+            PassBox.GetComponent<Text>().text = "Falha!";
             yield return new WaitForSeconds(1.5f);
             CorrectKey = 0;
-            PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "";
-            DisplayBox.GetComponent<TMPro.TextMeshProUGUI>().text = "";
+            PassBox.GetComponent<Text>().text = "";
+            DisplayBox.GetComponent<Text>().text = "";
             yield return new WaitForSeconds(1.5f);
             WaitingForKey = 0;
             CountingDown = 1;
