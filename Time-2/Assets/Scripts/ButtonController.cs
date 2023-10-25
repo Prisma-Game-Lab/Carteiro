@@ -16,5 +16,6 @@ public class ButtonController : MonoBehaviour
     private void OnMouseDown()
     {
         _spriteRenderer.enabled = true;
+        //ButtonParentController.UpdateCounter();
     }
 }
