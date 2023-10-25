@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class MenuPauseManager : MonoBehaviour
 {
-    [SerializeField] private string cenaAtual;
     [SerializeField] private string cenaDoJogoSair;
     [SerializeField] private string cenaDoJogoOpcoes;
     [SerializeField] private GameObject MenuPause;
@@ -57,7 +56,7 @@ public class MenuPauseManager : MonoBehaviour
 
     public void AbrirOpcoes()
     {
-        MenuPrincipalManager.cenaRetorno = cenaAtual;
+        MenuPrincipalManager.cenaRetorno = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(cenaDoJogoOpcoes);
         Despausar();
     }

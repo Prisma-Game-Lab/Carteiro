@@ -400,7 +400,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c2d516144939b548a3f4d0953cad7f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cenaAtual: Tela_Carta
   cenaDoJogoSair: Menu_Principal
   cenaDoJogoOpcoes: "Menu_\xC1udio"
   MenuPause: {fileID: 1662431052}
@@ -414,7 +413,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134323677}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.3036547, y: -0.48929366, z: 916.3258}
+  m_LocalPosition: {x: 3.30365, y: -0.48928833, z: 916.3258}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

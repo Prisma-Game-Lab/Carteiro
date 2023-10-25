@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MenuPrincipalManager : MonoBehaviour
 {
-    [SerializeField] private string cenaAtual;
     [SerializeField] private string cenaDoJogoJogar;
     [SerializeField] private string cenaDoJogoOpcoes;
     [SerializeField] private GameObject painelMenuInicial;
@@ -18,7 +17,7 @@ public class MenuPrincipalManager : MonoBehaviour
 
     public void AbrirOpcoes()
     {
-        cenaRetorno = cenaAtual;
+        cenaRetorno = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(cenaDoJogoOpcoes);
     }
 

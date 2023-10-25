@@ -5,22 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Menu_Principal.unity
     guid: 75d09553b1c36984485578c4fcb5bbe5
-  - enabled: 0
-    path: Assets/Scenes/Fase_1.unity
-    guid: 7a4873d446873464d83c13257b077630
-  - enabled: 0
-    path: Assets/Scenes/Jogo_Placeholder.unity
-    guid: 7099b821d32569546ad8ff1361a470b1
   - enabled: 1
     path: Assets/Scenes/Tela_Carta.unity
     guid: 55eba15a30b967f46a5c81227e5d49ec
   - enabled: 1
     path: "Assets/Scenes/Menu_\xC1udio.unity"
     guid: ed42d693f540a3940898f902d4ec11e1
+  - enabled: 0
+    path: Assets/Scenes/Level_Test.unity
+    guid: 48c9d5328249f484292d23bd8964ee84
   m_configObjects: {}
