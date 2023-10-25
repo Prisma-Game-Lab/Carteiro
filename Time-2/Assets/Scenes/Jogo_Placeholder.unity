@@ -2820,7 +2820,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: '[W]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e415a21bc086e943bf52808f5e83b68, type: 2}
   m_sharedMaterial: {fileID: 770713908751223175, guid: 2e415a21bc086e943bf52808f5e83b68, type: 2}
@@ -2854,7 +2854,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3350,7 +3350,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e415a21bc086e943bf52808f5e83b68, type: 2}
   m_sharedMaterial: {fileID: 770713908751223175, guid: 2e415a21bc086e943bf52808f5e83b68, type: 2}
@@ -3384,7 +3384,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
