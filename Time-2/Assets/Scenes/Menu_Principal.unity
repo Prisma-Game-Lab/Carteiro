@@ -183,8 +183,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Jogar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 82a7f696f589c2b419d7e368321c5bf2, type: 2}
-  m_sharedMaterial: {fileID: 2634761018971978708, guid: 82a7f696f589c2b419d7e368321c5bf2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d51644e265645dc4dbbaa639f23f70ae, type: 2}
+  m_sharedMaterial: {fileID: -8859927107154951836, guid: d51644e265645dc4dbbaa639f23f70ae, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -357,8 +357,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Op\xE7\xF5es"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 82a7f696f589c2b419d7e368321c5bf2, type: 2}
-  m_sharedMaterial: {fileID: 2634761018971978708, guid: 82a7f696f589c2b419d7e368321c5bf2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d51644e265645dc4dbbaa639f23f70ae, type: 2}
+  m_sharedMaterial: {fileID: -8859927107154951836, guid: d51644e265645dc4dbbaa639f23f70ae, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -738,8 +738,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Sair
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 82a7f696f589c2b419d7e368321c5bf2, type: 2}
-  m_sharedMaterial: {fileID: 2634761018971978708, guid: 82a7f696f589c2b419d7e368321c5bf2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d51644e265645dc4dbbaa639f23f70ae, type: 2}
+  m_sharedMaterial: {fileID: -8859927107154951836, guid: d51644e265645dc4dbbaa639f23f70ae, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
