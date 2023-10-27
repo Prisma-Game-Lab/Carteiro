@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GuiltMeter : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class GuiltMeter : MonoBehaviour
     public GameObject shadow;
     private float timer;
     private float sec = 1.0f;
+    [SerializeField] private string CenaGameOver;
 
     void Start()
     {
@@ -31,12 +33,12 @@ public class GuiltMeter : MonoBehaviour
     {
         if (actualGuilt == MaxGuilt / 2)
         {
-            print("Shadow");
             shadow.GetComponent<ShadowMovement>().moveShadow();
         }
-        else if (MaxGuilt <= 0.0f)
+        else if (actualGuilt <= 0.0f)
         {
-            print("Game over");
+            SceneManager.LoadScene(CenaGameOver);
+            Debug.Log("Game over");
         }
     }
 }
