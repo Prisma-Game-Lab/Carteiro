@@ -30,4 +30,11 @@ public class ShadowMovement : MonoBehaviour
     public void moveShadow(){
         startMovement = true;
     }
+
+    public void retreatShadow()
+    {
+        startMovement = false;
+    }
+
+
 }

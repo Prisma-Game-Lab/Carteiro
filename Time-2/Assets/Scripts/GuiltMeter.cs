@@ -38,7 +38,6 @@ public class GuiltMeter : MonoBehaviour
         else if (actualGuilt <= 0.0f)
         {
             SceneManager.LoadScene(CenaGameOver);
-            Debug.Log("Game over");
         }
     }
 }
