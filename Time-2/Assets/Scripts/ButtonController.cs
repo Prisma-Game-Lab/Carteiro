@@ -9,7 +9,7 @@ public class ButtonController : MonoBehaviour
 
     public ButtonController(Vector3 vector)
     {
-        
+        Instantiate(this, vector, transform.rotation);
     }
 
     void Start()
