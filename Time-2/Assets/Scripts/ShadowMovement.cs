@@ -11,9 +11,7 @@ public class ShadowMovement : MonoBehaviour
     [Range(0, 1)] public float ShadowSpeed;
     [Range(0, 1)] public float ShadowRetreatSpeed;
 
-
-    public float moveValue;
-    public bool startMovement = false;
+    private bool startMovement = false;
 
     private void FixedUpdate()
     {
