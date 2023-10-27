@@ -6,6 +6,12 @@ public class ButtonController : MonoBehaviour
 {
     private SpriteRenderer _spriteRenderer;
     // Start is called before the first frame update
+
+    public ButtonController(Vector3 vector)
+    {
+        
+    }
+
     void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();

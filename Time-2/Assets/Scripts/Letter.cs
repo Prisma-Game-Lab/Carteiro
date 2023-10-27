@@ -1,18 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LetterParent : MonoBehaviour
+[CreateAssetMenu(fileName = "Nova Carta", menuName = "Cartas")]
+public class Letter : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Sprite sprite;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int num_buttons;
+    public int buttons_pressed;
+
+    [SerializeField]
+    public Vector3[] buttons;
+
+    public int coisa;
+
 }
