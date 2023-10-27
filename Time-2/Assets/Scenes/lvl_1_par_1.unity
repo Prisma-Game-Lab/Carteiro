@@ -721,7 +721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5740248797553913912, guid: 1fd583f921d485b4299b8023fb46f338, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 24.4658
+      value: 24.46582
       objectReference: {fileID: 0}
     - target: {fileID: 5740248797553913912, guid: 1fd583f921d485b4299b8023fb46f338, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1478,7 +1478,7 @@ GameObject:
   - component: {fileID: 1384627657}
   - component: {fileID: 1384627656}
   m_Layer: 5
-  m_Name: Main Canvas
+  m_Name: LayoutCarta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

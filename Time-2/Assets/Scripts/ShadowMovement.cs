@@ -13,7 +13,7 @@ public class ShadowMovement : MonoBehaviour
 
 
     public float moveValue;
-    public bool startMovement = false;
+    public static bool startMovement = false;
 
     private void FixedUpdate()
     {
@@ -27,7 +27,7 @@ public class ShadowMovement : MonoBehaviour
         }
     }
 
-    public void moveShadow(){
+    public static void moveShadow(){
         startMovement = true;
     }
 }
