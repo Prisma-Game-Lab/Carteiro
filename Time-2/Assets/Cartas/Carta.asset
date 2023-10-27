@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf32b6ddd5297bb438f9034ab5d0aa7a, type: 3}
   m_Name: Carta
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 41fefe86299883b4c9fc154cea7d8e08, type: 3}
   num_buttons: 0
   buttons_pressed: 0
-  buttons: []
+  buttons:
+  - {x: 0, y: 0, z: 0}
   coisa: 0
