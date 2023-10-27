@@ -254,6 +254,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1376924319}
     m_Modifications:
+    - target: {fileID: 756878758925880580, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 400
+      objectReference: {fileID: 0}
     - target: {fileID: 756878760021290028, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
       propertyPath: BotaoPause
       value: 
@@ -1333,8 +1337,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.018270832, y: 0.62600005}
   m_AnchorMax: {x: 0.82060415, y: 0.91800004}
-  m_AnchoredPosition: {x: -23, y: -5}
-  m_SizeDelta: {x: 382, y: 72.5}
+  m_AnchoredPosition: {x: -23.000061, y: 53.574986}
+  m_SizeDelta: {x: 382, y: 189.65002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1692637982
 MonoBehaviour:
@@ -1659,6 +1663,7 @@ MonoBehaviour:
   MaxGuilt: 10
   actualGuilt: 0
   shadow: {fileID: 1462879070}
+  CenaGameOver: 
 --- !u!1001 &6279334136611493823
 PrefabInstance:
   m_ObjectHideFlags: 0
