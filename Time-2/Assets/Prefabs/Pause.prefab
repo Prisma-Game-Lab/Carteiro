@@ -335,7 +335,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 756878760021290028}
         m_TargetAssemblyTypeName: MenuPauseManager, Assembly-CSharp
         m_MethodName: BotaoPausar
         m_Mode: 1
