@@ -1328,8 +1328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ba531d54e7e54c488d5556e3121a734, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cenaAtual: Menu_Principal
-  cenaDoJogoJogar: Tela_Carta
+  cenaDoJogoJogar: Level_Test
   cenaDoJogoOpcoes: "Menu_\xC1udio"
   painelMenuInicial: {fileID: 160277334}
   painelMenuOpcoes: {fileID: 0}
