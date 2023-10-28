@@ -17,7 +17,7 @@ public class ShadowMovement : MonoBehaviour
     {
         if(startMovement)
         {
-            shadow.position = Vector2.Lerp(shadow.position, frontPlayer.position, Time.deltaTime * ShadowSpeed);
+            shadow.position = Vector2.MoveTowards(shadow.position, frontPlayer.position, Time.deltaTime * ShadowSpeed);
         }
         else
         {
