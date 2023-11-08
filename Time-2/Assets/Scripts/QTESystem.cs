@@ -6,9 +6,14 @@ using TMPro;
 
 public class QTESystem : MonoBehaviour
 {
-    public GameObject DisplayBox;
+    //public GameObject DisplayBox;
     public GameObject PassBox;
-    public int QTEGen;
+    [SerializeField] private GameObject Key_W;
+    [SerializeField] private GameObject Key_A;
+    [SerializeField] private GameObject Key_S;
+    [SerializeField] private GameObject Key_D;
+    private GameObject CurrentDisplayingKey;
+    public int Tecla;
     public int WaitingForKey;
     public int CorrectKey;
     public int CountingDown;
@@ -17,33 +22,37 @@ public class QTESystem : MonoBehaviour
     {
         if (WaitingForKey == 0)
         {
-            QTEGen = Random.Range(1, 5); // de 1 para 4, definindo a nova tecla
+            Tecla = Random.Range(1, 5); // de 1 para 4, definindo a nova tecla
             CountingDown = 1;
             StartCoroutine(CountDown());
 
-            if (QTEGen == 1) // W
+            if (Tecla == 1) // W
             {
                 WaitingForKey = 1;
-                DisplayBox.GetComponent<TMPro.TextMeshProUGUI>().text = "[W]";
+                CurrentDisplayingKey = Key_W;
+                CurrentDisplayingKey.SetActive(true);
             }
-            if (QTEGen == 2) // A
+            if (Tecla == 2) // A
             {
                 WaitingForKey = 1;
-                DisplayBox.GetComponent<TMPro.TextMeshProUGUI>().text = "[A]";
+                CurrentDisplayingKey = Key_A;
+                CurrentDisplayingKey.SetActive(true);
             }
-            if (QTEGen == 3) // S
+            if (Tecla == 3) // S
             {
                 WaitingForKey = 1;
-                DisplayBox.GetComponent<TMPro.TextMeshProUGUI>().text = "[S]";
+                CurrentDisplayingKey = Key_S;
+                CurrentDisplayingKey.SetActive(true);
             }
-            if (QTEGen == 4) // D
+            if (Tecla == 4) // D
             {
                 WaitingForKey = 1;
-                DisplayBox.GetComponent<TMPro.TextMeshProUGUI>().text = "[D]";
+                CurrentDisplayingKey = Key_D;
+                CurrentDisplayingKey.SetActive(true);
             }
         }
 
-        if (QTEGen == 1)
+        if (Tecla == 1)
         {
             if (Input.anyKeyDown)
             {
@@ -59,7 +68,7 @@ public class QTESystem : MonoBehaviour
                 }
             }
         }
-        if (QTEGen == 2)
+        if (Tecla == 2)
         {
             if (Input.anyKeyDown)
             {
@@ -75,7 +84,7 @@ public class QTESystem : MonoBehaviour
                 }
             }
         }
-        if (QTEGen == 3)
+        if (Tecla == 3)
         {
             if (Input.anyKeyDown)
             {
@@ -91,7 +100,7 @@ public class QTESystem : MonoBehaviour
                 }
             }
         }
-        if (QTEGen == 4)
+        if (Tecla == 4)
         {
             if (Input.anyKeyDown)
             {
@@ -111,7 +120,7 @@ public class QTESystem : MonoBehaviour
 
     IEnumerator KeyPressing()
     {
-        QTEGen = 8;
+        Tecla = 8;
         if (CorrectKey == 1)
         {
             CountingDown = 2;
@@ -119,7 +128,7 @@ public class QTESystem : MonoBehaviour
             yield return new WaitForSeconds(1.5f);
             CorrectKey = 0;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "";
-            DisplayBox.GetComponent<TMPro.TextMeshProUGUI>().text = "";
+            CurrentDisplayingKey.SetActive(false);
             yield return new WaitForSeconds(1.5f);
             WaitingForKey = 0;
             CountingDown = 1;
@@ -132,7 +141,7 @@ public class QTESystem : MonoBehaviour
             yield return new WaitForSeconds(1.5f);
             CorrectKey = 0;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "";
-            DisplayBox.GetComponent<TMPro.TextMeshProUGUI>().text = "";
+            CurrentDisplayingKey.SetActive(false);
             yield return new WaitForSeconds(1.5f);
             WaitingForKey = 0;
             CountingDown = 1;
@@ -144,13 +153,13 @@ public class QTESystem : MonoBehaviour
         yield return new WaitForSeconds(3.5f);
         if (CountingDown == 1)
         {
-            QTEGen = 8;
+            Tecla = 8;
             CountingDown = 2;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "Falha!";
             yield return new WaitForSeconds(1.5f);
             CorrectKey = 0;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "";
-            DisplayBox.GetComponent<TMPro.TextMeshProUGUI>().text = "";
+            CurrentDisplayingKey.SetActive(false);
             yield return new WaitForSeconds(1.5f);
             WaitingForKey = 0;
             CountingDown = 1;
