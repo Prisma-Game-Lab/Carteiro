@@ -19,12 +19,8 @@ public class QTESystem : MonoBehaviour
     [SerializeField] private int CountingDown;
     [SerializeField] private int NVezes; // Alterar no editor
 
-    private int i = 0;
+    [SerializeField] private int i = 0;
 
-    void Start()
-    {
-        
-    }
     void Update()
     {
         if (i == NVezes)
