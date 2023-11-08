@@ -6,20 +6,36 @@ using TMPro;
 
 public class QTESystem : MonoBehaviour
 {
-    //public GameObject DisplayBox;
-    public GameObject PassBox;
+    [SerializeField] private GameObject PassBox;
     [SerializeField] private GameObject Key_W;
     [SerializeField] private GameObject Key_A;
     [SerializeField] private GameObject Key_S;
     [SerializeField] private GameObject Key_D;
     private GameObject CurrentDisplayingKey;
-    public int Tecla;
-    public int WaitingForKey;
-    public int CorrectKey;
-    public int CountingDown;
 
+    [SerializeField] private int Tecla;
+    [SerializeField] private int WaitingForKey;
+    [SerializeField] private int CorrectKey;
+    [SerializeField] private int CountingDown;
+    [SerializeField] private int NVezes; // Alterar no editor
+
+    private int i = 0;
+
+    void Start()
+    {
+        
+    }
     void Update()
     {
+        if (i == NVezes)
+        {
+
+            PassBox.SetActive(false);
+            StopCoroutine(CountDown());
+            StopCoroutine(KeyPressing());
+            this.enabled = false;
+        }
+        PassBox.SetActive(true);
         if (WaitingForKey == 0)
         {
             Tecla = Random.Range(1, 5); // de 1 para 4, definindo a nova tecla
@@ -61,9 +77,9 @@ public class QTESystem : MonoBehaviour
                     CorrectKey = 1;
                     StartCoroutine(KeyPressing());
                 }
-                else
+                else if (Input.GetKeyDown(KeyCode.A)||Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
                 {
-                    CorrectKey = 0;
+                    CorrectKey = 2;
                     StartCoroutine(KeyPressing());
                 }
             }
@@ -77,9 +93,9 @@ public class QTESystem : MonoBehaviour
                     CorrectKey = 1;
                     StartCoroutine(KeyPressing());
                 }
-                else
+                else if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
                 {
-                    CorrectKey = 0;
+                    CorrectKey = 2;
                     StartCoroutine(KeyPressing());
                 }
             }
@@ -93,9 +109,9 @@ public class QTESystem : MonoBehaviour
                     CorrectKey = 1;
                     StartCoroutine(KeyPressing());
                 }
-                else
+                else if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
                 {
-                    CorrectKey = 0;
+                    CorrectKey = 2;
                     StartCoroutine(KeyPressing());
                 }
             }
@@ -109,9 +125,9 @@ public class QTESystem : MonoBehaviour
                     CorrectKey = 1;
                     StartCoroutine(KeyPressing());
                 }
-                else
+                else if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S))
                 {
-                    CorrectKey = 0;
+                    CorrectKey = 2;
                     StartCoroutine(KeyPressing());
                 }
             }
@@ -120,9 +136,10 @@ public class QTESystem : MonoBehaviour
 
     IEnumerator KeyPressing()
     {
-        Tecla = 8;
+        Tecla = 0;
         if (CorrectKey == 1)
         {
+            i++;
             CountingDown = 2;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "Sucesso!";
             yield return new WaitForSeconds(1.5f);
@@ -136,6 +153,7 @@ public class QTESystem : MonoBehaviour
 
         if (CorrectKey == 2)
         {
+            i = 0;
             CountingDown = 2;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "Falha!";
             yield return new WaitForSeconds(1.5f);
@@ -153,7 +171,8 @@ public class QTESystem : MonoBehaviour
         yield return new WaitForSeconds(3.5f);
         if (CountingDown == 1)
         {
-            Tecla = 8;
+            i++;
+            Tecla = 0;
             CountingDown = 2;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "Falha!";
             yield return new WaitForSeconds(1.5f);
