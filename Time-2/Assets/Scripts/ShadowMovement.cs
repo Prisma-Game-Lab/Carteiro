@@ -4,24 +4,35 @@ using UnityEngine;
 
 public class ShadowMovement : MonoBehaviour
 {
-    public Transform shadow;
-    public Transform frontPlayer;
-    public Transform ShadowStart;
-
+    [SerializeField] private Transform shadow;
+    [SerializeField] private Transform frontPlayer;
+    [SerializeField] private Transform shadowStart;
+    [SerializeField] private GameObject guiltObject;
+    
+    private bool startMovement = false;
+    private float distance;
+    private int guiltTime;
     [Range(0, 1)] public float ShadowSpeed;
     [Range(0, 1)] public float ShadowRetreatSpeed;
 
-    private bool startMovement = false;
+    
 
-    private void FixedUpdate()
+
+    private void Start()
     {
-        if(startMovement)
+        distance = Vector2.Distance(shadow.position, frontPlayer.position);
+    }
+
+    private void Update()
+    {
+        if (startMovement)
         {
-            shadow.position = Vector2.MoveTowards(shadow.position, frontPlayer.position, Time.deltaTime * ShadowSpeed);
+            guiltTime = guiltObject.GetComponent<GuiltMeter>().halfGuilt;
+            shadow.position = Vector2.MoveTowards(shadow.position, frontPlayer.position, Time.deltaTime * distance/guiltTime);
         }
         else
         {
-            shadow.position = Vector2.Lerp(shadow.position, ShadowStart.position, Time.deltaTime * ShadowRetreatSpeed);
+            shadow.position = Vector2.Lerp(shadow.position, shadowStart.position, Time.deltaTime * ShadowRetreatSpeed);
         }
     }
 

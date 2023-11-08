@@ -5,16 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class GuiltMeter : MonoBehaviour
 {
-    public int MaxGuilt;
-    public int actualGuilt;
+    [SerializeField] private string CenaGameOver;
+    [SerializeField] private int MaxGuilt;
     public GameObject shadow;
     private float timer;
     private float sec = 1.0f;
-    [SerializeField] private string CenaGameOver;
+    private int actualGuilt;
+    public int halfGuilt;
 
     void Start()
     {
         actualGuilt = MaxGuilt;
+        halfGuilt = MaxGuilt / 2;
     }
 
     void Update()
