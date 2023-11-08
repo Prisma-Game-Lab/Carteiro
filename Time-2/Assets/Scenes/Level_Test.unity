@@ -1376,7 +1376,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462879070}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 139, y: 0, z: 0}
+  m_LocalPosition: {x: 140, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1397,7 +1397,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shadow: {fileID: 1462879072}
   frontPlayer: {fileID: 1725834516}
-  ShadowStart: {fileID: 1600617803}
+  shadowStart: {fileID: 1600617803}
+  guiltObject: {fileID: 1929051816}
   ShadowSpeed: 0.46
   ShadowRetreatSpeed: 0.8
 --- !u!1 &1469226493
@@ -1641,7 +1642,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600617802}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 139, y: 0, z: 0}
+  m_LocalPosition: {x: 140, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1907,7 +1908,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725834515}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2181,10 +2182,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b69958b20fd92f2428b05a5ad83365ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxGuilt: 40
-  actualGuilt: 0
-  shadow: {fileID: 1462879070}
   CenaGameOver: Menu_Principal
+  MaxGuilt: 10
+  shadow: {fileID: 1462879070}
+  halfGuilt: 0
 --- !u!1 &1940931643 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5740248797553913915, guid: 1fd583f921d485b4299b8023fb46f338, type: 3}
