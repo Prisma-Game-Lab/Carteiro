@@ -16,6 +16,8 @@ public class MenuPrincipalManager : MonoBehaviour
         if ( AjudaApareceu == true)
         {   
             SceneManager.LoadScene(cenaDoJogoJogar);
+            MenuPauseManager.JogoEstaPausado = true;
+            Time.timeScale = 0f;
         }
         else
         {
