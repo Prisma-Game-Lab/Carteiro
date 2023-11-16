@@ -10,6 +10,7 @@ public class CheckButtons : MonoBehaviour
     public int maxButtons;
     private int counter = 0;
     public GameObject shadow;
+    public GameObject player;
 
     void Update()
     {
@@ -23,6 +24,7 @@ public class CheckButtons : MonoBehaviour
         if(counter == maxButtons)
         {
             shadow.GetComponent<ShadowMovement>().retreatShadow();
+            player.GetComponent<GuiltMeter>().stopGuilt();
         }
         else
         {

@@ -12,8 +12,7 @@ public class ShadowMovement : MonoBehaviour
     private bool startMovement = false;
     private float distance;
     private int guiltTime;
-    [Range(0, 1)] public float ShadowSpeed;
-    [Range(0, 1)] public float ShadowRetreatSpeed;
+    [Range(0, 1)] [SerializeField] private float ShadowRetreatSpeed;
 
     
 

@@ -1399,7 +1399,6 @@ MonoBehaviour:
   frontPlayer: {fileID: 1725834516}
   shadowStart: {fileID: 1600617803}
   guiltObject: {fileID: 1929051816}
-  ShadowSpeed: 0.46
   ShadowRetreatSpeed: 0.8
 --- !u!1 &1469226493
 GameObject:
@@ -1884,6 +1883,7 @@ MonoBehaviour:
   - {fileID: 1022215731}
   maxButtons: 6
   shadow: {fileID: 1462879070}
+  player: {fileID: 1929051816}
 --- !u!1 &1725834515
 GameObject:
   m_ObjectHideFlags: 0

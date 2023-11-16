@@ -7,33 +7,48 @@ public class GuiltMeter : MonoBehaviour
 {
     [SerializeField] private string CenaGameOver;
     [SerializeField] private int MaxGuilt;
-    public GameObject shadow;
+    [SerializeField] private GameObject shadow;
     private float timer;
-    private float sec = 1.0f;
     private int actualGuilt;
     public int halfGuilt;
+    private bool readingGuilt;
 
     void Start()
     {
-        actualGuilt = MaxGuilt;
-        halfGuilt = MaxGuilt / 2;
+        readingGuilt = false;
+        startGuilt(10);
     }
 
     void Update()
     {
-        timer += Time.deltaTime;
-
-        if(timer >= sec)
+        if (readingGuilt)
         {
-            timer = 0f;
-            actualGuilt--;
-            CheckGuilt();
+            timer += Time.deltaTime;
+
+            if (timer >= 1.0f)
+            {
+                timer = 0f;
+                actualGuilt--;
+                CheckGuilt();
+            }
         }
     }
 
-    void CheckGuilt()
+    public void startGuilt(int newMaxGuilt)
     {
-        if (actualGuilt == MaxGuilt / 2)
+        MaxGuilt = newMaxGuilt;
+        halfGuilt = MaxGuilt / 2;
+        actualGuilt = MaxGuilt;
+        readingGuilt = true;
+    }
+    public void stopGuilt()
+    {
+        readingGuilt = false;
+    }
+
+    private void CheckGuilt()
+    {
+        if (actualGuilt == halfGuilt)
         {
             shadow.GetComponent<ShadowMovement>().moveShadow();
         }
