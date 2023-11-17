@@ -9,21 +9,12 @@ public class MenuPrincipalManager : MonoBehaviour
     [SerializeField] private string cenaDoJogoJogar;
     [SerializeField] private string cenaDoJogoOpcoes;
     [SerializeField] private GameObject PainelAjuda;
-    [SerializeField] private static bool AjudaApareceu = false;
     public static string cenaRetorno;
     public void Jogar()
     {
-        if ( AjudaApareceu == true)
-        {   
-            SceneManager.LoadScene(cenaDoJogoJogar);
-            MenuPauseManager.JogoEstaPausado = true;
-            Time.timeScale = 0f;
-        }
-        else
-        {
-            PainelAjuda.SetActive(true);
-            AjudaApareceu = true;
-        } 
+        SceneManager.LoadScene(cenaDoJogoJogar);
+        MenuPauseManager.JogoEstaPausado = true;
+        Time.timeScale = 0f;
     }
 
     public void AbrirOpcoes()
@@ -42,7 +33,6 @@ public class MenuPrincipalManager : MonoBehaviour
     public void Ajuda()
     {
         PainelAjuda.SetActive(true);
-        AjudaApareceu = true;
     }
 
     public void FecharAjuda()
