@@ -21,7 +21,9 @@ public class ButtonController : MonoBehaviour
     // Detecta clique do mouse
     private void OnMouseDown()
     {
-        _spriteRenderer.enabled = true;
+        if (_spriteRenderer.enabled == false) { }
+            _spriteRenderer.enabled = true;
+        print("ué");
         //ButtonParentController.UpdateCounter();
     }
 }
