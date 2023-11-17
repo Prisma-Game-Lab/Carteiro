@@ -10,9 +10,7 @@ public class LetterDisplay : MonoBehaviour
     private int current;
     private int inDisplay;
 
-    public List<GameObject> buttons;
-
-    public Dictionary<int, Object> botoes;
+    public Dictionary<int, List<Object>> botoesDict = new Dictionary<int, List<Object>>();
 
     public Sprite paragraph;
 
@@ -20,17 +18,30 @@ public class LetterDisplay : MonoBehaviour
     public int buttons_pressed;
 
     public Vector3[] vector3s;
-
-    private SpriteRenderer _spriteRenderer;
     private GameObject canva;
 
     //private Button botaoDeTransicao;
 
-    // Start is called before the first frame update
+    //Inicia botões da carta no dicionario
+    private void iniciaCartaNoDict(Letter carta)
+    {
+        List<Object> buttons = new List<Object>();
+
+        for (int i = 0; i < carta.buttons.Length; i++)
+        {
+            GameObject button = Instantiate(buttonPrefab, carta.buttons[i], transform.rotation) as GameObject;
+
+            button.transform.localScale = new Vector3(1, 1, 1);
+            button.transform.SetParent(canva.transform, false);
+
+            buttons.Add(button);
+        }
+
+        botoesDict.Add(current, buttons);
+    }
+
     void Start()
     {
-        //botaoDeTransicao  = GetComponent<Button>();
-
         current = 0; //a q está carregada no script
         inDisplay = 0; ; //a q está carregada no display
 
@@ -41,17 +52,10 @@ public class LetterDisplay : MonoBehaviour
 
         canva = GameObject.Find("Paragraph");
 
-        for (int i = 0; i < cartas[inDisplay].buttons.Length; i++)
-        {
-            GameObject button = Instantiate(buttonPrefab, cartas[inDisplay].buttons[i], transform.rotation) as GameObject;
-            
-            button.transform.localScale = new Vector3(1, 1, 1);
-            button.transform.SetParent(canva.transform, false);
-
-            buttons.Add(button);
-        }
+        iniciaCartaNoDict(cartas[current]);
     }
 
+    //Atualiza o indice da carta
     public void trocaCarta()
     {
         if(current == cartas.Length - 1)
@@ -64,21 +68,30 @@ public class LetterDisplay : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (inDisplay != current)
         {
+            foreach (GameObject botao in botoesDict[inDisplay])
+            {
+                botao.SetActive(false);
+            }
 
-            gameObject.GetComponent<Image>().sprite = cartas[inDisplay].paragraph;
-
-            //paragraph = cartas[current].paragraph;
-            //num_buttons += cartas[current].num_buttons;
-            //buttons_pressed = cartas[current].buttons_pressed;
-
-            
+            if (botoesDict.ContainsKey(current))
+            {
+                foreach (GameObject botao in botoesDict[current])
+                {
+                    botao.SetActive(true);
+                }
+            }
+            else
+            {
+                iniciaCartaNoDict(cartas[current]);
+            }
 
            inDisplay = current;
+
+           gameObject.GetComponent<Image>().sprite = cartas[inDisplay].paragraph;
         }
     }
 }
