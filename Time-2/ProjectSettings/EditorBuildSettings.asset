@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu_Principal.unity
     guid: 75d09553b1c36984485578c4fcb5bbe5
   - enabled: 1
-    path: "Assets/Scenes/Menu_\xC1udio.unity"
+    path: "Assets/Scenes/Configura\xE7\xF5es.unity"
     guid: ed42d693f540a3940898f902d4ec11e1
   - enabled: 1
     path: Assets/Scenes/Level_Test.unity

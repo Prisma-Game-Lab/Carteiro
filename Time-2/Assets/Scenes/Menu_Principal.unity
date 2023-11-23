@@ -1988,7 +1988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cenaDoJogoJogar: Level_Test
-  cenaDoJogoOpcoes: "Menu_\xC1udio"
+  cenaDoJogoOpcoes: "Configura\xE7\xF5es"
   PainelAjuda: {fileID: 801656239}
 --- !u!4 &2122675565
 Transform:

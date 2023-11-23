@@ -540,6 +540,10 @@ PrefabInstance:
       propertyPath: PainelInicio
       value: 
       objectReference: {fileID: 1859385207}
+    - target: {fileID: 756878760021290028, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
+      propertyPath: cenaDoJogoOpcoes
+      value: "Configura\xE7\xF5es"
+      objectReference: {fileID: 0}
     - target: {fileID: 4343844913107381622, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
       propertyPath: m_Name
       value: Pause
