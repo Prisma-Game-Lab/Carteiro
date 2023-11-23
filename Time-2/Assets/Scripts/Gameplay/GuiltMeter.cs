@@ -54,6 +54,7 @@ public class GuiltMeter : MonoBehaviour
         }
         else if (actualGuilt <= 0.0f)
         {
+            MenuPrincipalManager.cenaRetorno = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene(CenaGameOver);
         }
     }

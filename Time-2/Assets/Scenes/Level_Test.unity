@@ -1825,7 +1825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b69958b20fd92f2428b05a5ad83365ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CenaGameOver: Menu_Principal
+  CenaGameOver: Game_Over
   MaxGuilt: 10
   shadow: {fileID: 1462879070}
   halfGuilt: 0
