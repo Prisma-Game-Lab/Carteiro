@@ -259,6 +259,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: -8907605970686516966}
+        m_TargetAssemblyTypeName: RabiscoScript, Assembly-CSharp
+        m_MethodName: Interruptor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 5740248797553913918}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
@@ -283,7 +295,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb5c67f85e2cc3d4187ac54df0aa3ec7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  total_buttons: 0
   imagem: {fileID: 0}
 --- !u!61 &4491478064706674960
 BoxCollider2D:
