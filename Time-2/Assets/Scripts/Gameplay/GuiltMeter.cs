@@ -16,7 +16,6 @@ public class GuiltMeter : MonoBehaviour
     void Start()
     {
         readingGuilt = false;
-        startGuilt(10);
     }
 
     void Update()
@@ -44,6 +43,7 @@ public class GuiltMeter : MonoBehaviour
     public void stopGuilt()
     {
         readingGuilt = false;
+        shadow.GetComponent<ShadowMovement>().retreatShadow();
     }
 
     private void CheckGuilt()

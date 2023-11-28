@@ -9,7 +9,7 @@ public class LetterDisplay : MonoBehaviour
     public LetterList[] cartas;
     public GameObject buttonPrefab;
 
-    private int currentParagraph; //paragrafo q está carregado no script
+    private int currentParagraph; //paragrafo q estï¿½ carregado no script
     private int currentLetter; //A carta atual do nivel 
     private int inDisplay; //paragrafo carregado no display
 
@@ -24,7 +24,10 @@ public class LetterDisplay : MonoBehaviour
 
     private GameObject canva;
 
-    //Inicia botões da carta no dicionario
+    [SerializeField] private int[] lettersGuilt;
+    public GameObject player;
+
+    //Inicia botï¿½es da carta no dicionario
     private void iniciaCartaNoDict(Letter carta)
     {
         List<Object> buttons = new List<Object>();
@@ -60,6 +63,9 @@ public class LetterDisplay : MonoBehaviour
         {
             num_buttons += cartas[currentLetter].carta[i].buttons.Length;
         }
+
+        player.GetComponent<GuiltMeter>().startGuilt(lettersGuilt[currentLetter]);
+        Debug.Log(lettersGuilt[currentLetter]);
     }
 
     //Atualiza o indice da carta
@@ -103,7 +109,9 @@ public class LetterDisplay : MonoBehaviour
     //Troca a carta quando todos os botoes forem pressionados
     public void atualizaCarta()
     {
-        for(int i = 0; i < cartas[currentLetter].carta.Length; i++)
+        player.GetComponent<GuiltMeter>().stopGuilt();
+
+        for (int i = 0; i < cartas[currentLetter].carta.Length; i++)
         {
             for (int j = 0; j < cartas[currentLetter].carta.Length; j++) {
                 foreach (GameObject botao in botoesDict[j])
@@ -132,6 +140,8 @@ public class LetterDisplay : MonoBehaviour
         {
             num_buttons += cartas[currentLetter].carta[i].buttons.Length;
         }
+
+        player.GetComponent<GuiltMeter>().startGuilt(lettersGuilt[currentLetter]);
     }
 
     void Update()
