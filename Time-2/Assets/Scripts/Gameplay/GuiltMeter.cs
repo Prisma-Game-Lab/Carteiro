@@ -54,6 +54,7 @@ public class GuiltMeter : MonoBehaviour
         }
         else if (actualGuilt <= 0.0f)
         {
+            AudioManager.Instance.sfxSource.Stop();
             MenuPrincipalManager.cenaRetorno = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene(CenaGameOver);
         }

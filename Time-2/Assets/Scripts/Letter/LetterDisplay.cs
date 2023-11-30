@@ -38,7 +38,7 @@ public class LetterDisplay : MonoBehaviour
 
             button.transform.localScale = new Vector3(1, 1, 1);
             button.transform.SetParent(canva.transform, false);
-
+            button.AddComponent<MouseHoverSFX>();
             buttons.Add(button);
         }
 

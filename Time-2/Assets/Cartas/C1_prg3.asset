@@ -15,4 +15,5 @@ MonoBehaviour:
   paragraph: {fileID: 0}
   num_buttons: 0
   buttons_pressed: 0
-  buttons: []
+  buttons:
+  - {x: 0, y: 0, z: 0}
