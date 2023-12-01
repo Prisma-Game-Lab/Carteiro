@@ -28,6 +28,8 @@ public class LetterDisplay : MonoBehaviour
     [SerializeField] private int[] lettersGuilt;
     public GameObject player;
 
+    [SerializeField] private string CenaVitoria; // tela de vitoria
+
     //Inicia bot�es da carta no dicionario
     private void iniciaCartaNoDict(Letter carta)
     {
@@ -158,7 +160,7 @@ public class LetterDisplay : MonoBehaviour
         }
         else if(buttons_pressed == num_buttons && currentLetter + 1 >= cartas.Length)
         {
-            //Aqui Bento
+            SceneManager.LoadScene(CenaVitoria);
         }
     }
 

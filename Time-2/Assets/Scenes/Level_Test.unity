@@ -1879,6 +1879,7 @@ MonoBehaviour:
   num_buttons: 0
   lettersGuilt: 14000000140000001e000000
   player: {fileID: 1929051816}
+  CenaVitoria: Vitoria
 --- !u!114 &1966003695
 MonoBehaviour:
   m_ObjectHideFlags: 0
