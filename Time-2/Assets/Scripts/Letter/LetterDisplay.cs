@@ -36,8 +36,9 @@ public class LetterDisplay : MonoBehaviour
         {
             GameObject button = Instantiate(buttonPrefab, carta.buttons[i], transform.rotation) as GameObject;
 
-            button.transform.localScale = new Vector3(1, 1, 1);
+            button.transform.localScale = new Vector3(5, 1, 1);
             button.transform.SetParent(canva.transform, false);
+
             button.AddComponent<MouseHoverSFX>();
             buttons.Add(button);
         }
@@ -71,7 +72,7 @@ public class LetterDisplay : MonoBehaviour
     //Atualiza o indice da carta
     public void trocaParagrafo()
     {
-        if(currentParagraph == cartas.Length - 1)
+        if(currentParagraph == cartas[currentLetter].carta.Length - 1)
         {
             currentParagraph = 0;
         }
@@ -146,7 +147,7 @@ public class LetterDisplay : MonoBehaviour
 
     void Update()
     {
-        if (inDisplay != currentParagraph && inDisplay + 1 < cartas[currentLetter].carta.Length)
+        if (inDisplay != currentParagraph)
         {
             atualizaDisplay();
         }

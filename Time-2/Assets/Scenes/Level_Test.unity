@@ -1862,7 +1862,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cartas:
   - carta:
-    - {fileID: 11400000, guid: 113db2ba010094147acf7fc0579826e0, type: 2}
     - {fileID: 11400000, guid: 23290d1bdeae70b41b443eb0cea1c792, type: 2}
   - carta:
     - {fileID: 11400000, guid: 23290d1bdeae70b41b443eb0cea1c792, type: 2}
