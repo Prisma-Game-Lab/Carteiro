@@ -30,7 +30,7 @@ public class LetterDisplay : MonoBehaviour
 
     [SerializeField] private string CenaVitoria; // tela de vitoria
 
-    //Inicia bot�es da carta no dicionario
+    //Inicia botoes da carta no dicionario
     private void iniciaCartaNoDict(Letter carta)
     {
         List<Object> buttons = new List<Object>();
@@ -72,6 +72,19 @@ public class LetterDisplay : MonoBehaviour
         Debug.Log(lettersGuilt[currentLetter]);
     }
 
+    //Funcao auxiliar que destroi os botoes da carta e limpa o dicionario
+    private void destroiBotoes()
+    {
+        for (int i = 0; i < cartas[currentLetter].carta.Length; i++)
+        {
+            foreach (GameObject botao in botoesDict[i])
+            {
+                Destroy(botao);
+            }
+            botoesDict.Remove(i);
+        }
+    }
+
     //Atualiza o indice da carta
     public void trocaParagrafo()
     {
@@ -86,7 +99,7 @@ public class LetterDisplay : MonoBehaviour
     }
 
     //Atualiza o display no update
-    public void atualizaDisplay()
+    private void atualizaDisplay()
     {
         foreach (GameObject botao in botoesDict[inDisplay])
         {
@@ -115,20 +128,12 @@ public class LetterDisplay : MonoBehaviour
     {
         player.GetComponent<GuiltMeter>().stopGuilt();
 
-        for (int i = 0; i < cartas[currentLetter].carta.Length; i++)
-        {
-                foreach (GameObject botao in botoesDict[i])
-                {
-                    Destroy(botao);
-                }
-                botoesDict.Remove(i);
-
-        }
+        destroiBotoes();
 
         currentLetter++;
 
         currentParagraph = 0;
-        inDisplay = 0; ;
+        inDisplay = 0;
 
         num_buttons = 0;
         buttons_pressed = 0;
@@ -164,9 +169,36 @@ public class LetterDisplay : MonoBehaviour
         }
     }
 
+    //Funcao estatica chamada pelos rabiscos, utilizada para controle dos botoes pressionados
     public static void pressButton()
     {
         buttons_pressed++;
+    }
+
+    //Funcao chamada quando o jogador perde, reinicia a carta na fase
+    public void resetaCarta()
+    {
+        destroiBotoes();
+
+        currentLetter = 0;
+        inDisplay = 0;
+        currentParagraph = 0;
+
+        num_buttons = 0;
+        buttons_pressed = 0;
+
+        gameObject.GetComponent<Image>().sprite = cartas[currentLetter].carta[inDisplay].paragraph;
+
+        canva = GameObject.Find("Paragraph");
+
+        iniciaCartaNoDict(cartas[currentLetter].carta[currentParagraph]);
+
+        for (int i = 0; i < cartas[currentLetter].carta.Length; i++)
+        {
+            num_buttons += cartas[currentLetter].carta[i].buttons.Length;
+        }
+
+        player.GetComponent<GuiltMeter>().startGuilt(lettersGuilt[currentLetter]);
     }
 }
 

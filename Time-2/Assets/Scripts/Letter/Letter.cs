@@ -9,9 +9,6 @@ public class Letter : ScriptableObject
 {
     public Sprite paragraph;
 
-    public int num_buttons;
-    public int buttons_pressed;
-
     [SerializeField]
     public Vector3[] buttons;
 
