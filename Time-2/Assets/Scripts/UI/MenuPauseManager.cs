@@ -17,6 +17,8 @@ public class MenuPauseManager : MonoBehaviour
 
     void Start()
     {
+        JogoEstaPausado = true;
+        Time.timeScale = 0f;
         if (PainelAjuda != null) 
         {
              PainelAjuda.SetActive(true);
