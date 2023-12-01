@@ -114,13 +114,12 @@ public class LetterDisplay : MonoBehaviour
 
         for (int i = 0; i < cartas[currentLetter].carta.Length; i++)
         {
-            for (int j = 0; j < cartas[currentLetter].carta.Length; j++) {
-                foreach (GameObject botao in botoesDict[j])
+                foreach (GameObject botao in botoesDict[i])
                 {
                     Destroy(botao);
                 }
-                botoesDict.Remove(j);
-            }
+                botoesDict.Remove(i);
+
         }
 
         currentLetter++;
