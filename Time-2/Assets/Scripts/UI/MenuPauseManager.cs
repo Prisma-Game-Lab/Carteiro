@@ -15,6 +15,20 @@ public class MenuPauseManager : MonoBehaviour
     public static bool JogoEstaPausado = false;
     private bool JogoIniciado = false;
 
+    void Start()
+    {
+        if (PainelAjuda != null) 
+        {
+             PainelAjuda.SetActive(true);
+        }
+        else
+        {
+            Time.timeScale = 1.0f;
+            JogoEstaPausado = false;
+            JogoIniciado = true;
+        }
+
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) && JogoIniciado == true)
