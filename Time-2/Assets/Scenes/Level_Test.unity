@@ -421,6 +421,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 892242925}
     - target: {fileID: 756878760021290028, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
+      propertyPath: PainelAjuda
+      value: 
+      objectReference: {fileID: 1859385207}
+    - target: {fileID: 756878760021290028, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
       propertyPath: PainelInicio
       value: 
       objectReference: {fileID: 1859385207}
@@ -1608,7 +1612,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1859385208
 RectTransform:
   m_ObjectHideFlags: 0
