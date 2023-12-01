@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LetterDisplay : MonoBehaviour
 {
@@ -154,6 +155,10 @@ public class LetterDisplay : MonoBehaviour
         if (buttons_pressed == num_buttons && currentLetter + 1 < cartas.Length)
         {
             atualizaCarta();
+        }
+        else if(buttons_pressed == num_buttons && currentLetter + 1 >= cartas.Length)
+        {
+            //Aqui Bento
         }
     }
 
