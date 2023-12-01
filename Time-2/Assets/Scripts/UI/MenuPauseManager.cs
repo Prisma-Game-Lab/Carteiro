@@ -9,12 +9,28 @@ public class MenuPauseManager : MonoBehaviour
     [SerializeField] private string cenaDoJogoSair;
     [SerializeField] private string cenaDoJogoOpcoes;
     [SerializeField] private GameObject MenuPause;
-    [SerializeField] private GameObject PainelInicio;
+    [SerializeField] private GameObject PainelAjuda;
     [SerializeField] private GameObject BotaoPause;
 
     public static bool JogoEstaPausado = false;
     private bool JogoIniciado = false;
 
+    void Start()
+    {
+        JogoEstaPausado = true;
+        Time.timeScale = 0f;
+        if (PainelAjuda != null) 
+        {
+             PainelAjuda.SetActive(true);
+        }
+        else
+        {
+            Time.timeScale = 1.0f;
+            JogoEstaPausado = false;
+            JogoIniciado = true;
+        }
+
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) && JogoIniciado == true)
@@ -71,7 +87,7 @@ public class MenuPauseManager : MonoBehaviour
     public void DespausarInicio()
     {
 
-        PainelInicio.SetActive(false);
+        PainelAjuda.SetActive(false);
         Time.timeScale = 1.0f;
         JogoEstaPausado = false;
         JogoIniciado = true;

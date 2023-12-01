@@ -13,8 +13,6 @@ public class MenuPrincipalManager : MonoBehaviour
     public void Jogar()
     {
         SceneManager.LoadScene(cenaDoJogoJogar);
-        MenuPauseManager.JogoEstaPausado = true;
-        Time.timeScale = 0f;
     }
 
     public void AbrirOpcoes()

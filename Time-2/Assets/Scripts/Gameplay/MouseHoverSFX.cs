@@ -13,7 +13,7 @@ public class MouseHoverSFX : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
-        AudioManager.Instance.PlaySFX("HeartBeat");
+        AudioManager.Instance.PlaySFX("ButtonHover");
     }
 
     public void OnPointerExit(PointerEventData eventData)
