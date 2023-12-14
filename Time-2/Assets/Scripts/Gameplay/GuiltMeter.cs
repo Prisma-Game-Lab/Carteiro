@@ -13,6 +13,7 @@ public class GuiltMeter : MonoBehaviour
     private int actualGuilt;
     public int halfGuilt;
     private bool readingGuilt;
+    public static int QTECount = 0;
 
     void Start()
     {
@@ -53,7 +54,7 @@ public class GuiltMeter : MonoBehaviour
         {
             shadow.GetComponent<ShadowMovement>().moveShadow();
         }
-        else if(actualGuilt == 1)
+        else if(actualGuilt == 1 && QTECount < 2)
         {
             readingGuilt = false;
             QTE.GetComponent<QTESystem>().enabled = true;

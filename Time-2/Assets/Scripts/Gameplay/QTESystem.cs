@@ -43,6 +43,7 @@ public class QTESystem : MonoBehaviour
             PassBox.SetActive(false);
             StopCoroutine(CountDown());
             StopCoroutine(KeyPressing());
+            GuiltMeter.QTECount += 1;
             this.enabled = false;
         }
         PassBox.SetActive(true);
