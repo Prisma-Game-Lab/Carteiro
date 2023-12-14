@@ -7,9 +7,10 @@ public class ShadowMovement : MonoBehaviour
     [SerializeField] private Transform shadow;
     [SerializeField] private Transform frontPlayer;
     [SerializeField] private Transform shadowStart;
+    [SerializeField] private Transform HalfWay;
     [SerializeField] private GameObject guiltObject;
     
-    private bool startMovement = false;
+    private int startMovement = 0;
     private float distance;
     private int guiltTime;
     [Range(0, 1)] [SerializeField] private float ShadowRetreatSpeed;
@@ -24,10 +25,14 @@ public class ShadowMovement : MonoBehaviour
 
     private void Update()
     {
-        if (startMovement)
+        if (startMovement == 1)
         {
             guiltTime = guiltObject.GetComponent<GuiltMeter>().halfGuilt;
             shadow.position = Vector2.MoveTowards(shadow.position, frontPlayer.position, Time.deltaTime * distance/guiltTime);
+        }
+        else if(startMovement == 2)
+        {
+            shadow.position = Vector2.Lerp(shadow.position, HalfWay.position, Time.deltaTime * ShadowRetreatSpeed);
         }
         else
         {
@@ -35,13 +40,24 @@ public class ShadowMovement : MonoBehaviour
         }
     }
 
-    public void moveShadow(){
-        startMovement = true;
+    public void RestartGuilt()
+    {
+        distance = Vector2.Distance(shadow.position, frontPlayer.position);
+        guiltObject.GetComponent<GuiltMeter>().startGuilt(guiltTime);
     }
 
+    public void moveShadow(){
+        startMovement = 1;
+    }
+
+    public void HalfWayShadow()
+    {
+        startMovement = 2;
+        Invoke("RestartGuilt", 3);
+    }
     public void retreatShadow()
     {
-        startMovement = false;
+        startMovement = 0;
     }
 
 

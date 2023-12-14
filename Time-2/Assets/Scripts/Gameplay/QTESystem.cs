@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -11,24 +12,38 @@ public class QTESystem : MonoBehaviour
     [SerializeField] private GameObject Key_A;
     [SerializeField] private GameObject Key_S;
     [SerializeField] private GameObject Key_D;
+    [SerializeField] private GameObject Shadow;
     private GameObject CurrentDisplayingKey;
+    [SerializeField] private string CenaDerrota;
 
-    [SerializeField] private int Tecla;
-    [SerializeField] private int WaitingForKey;
-    [SerializeField] private int CorrectKey;
-    [SerializeField] private int CountingDown;
+    private int Tecla;
+    private int WaitingForKey;
+    private int CorrectKey;
+    private int CountingDown;
     [SerializeField] private int NVezes; // Alterar no editor
+    [SerializeField] private int NErros; // Alterar no editor
+    [SerializeField] private float Intervalo; // Alterar no editor, na duvida 2.5
+    [SerializeField] private float TempoParaApertar; // Alterar no editor, na duvida 1.0
 
-    [SerializeField] private int i = 0;
+
+    private int i = 0;
+    private int erros = 0;
 
     void Update()
     {
+        if (erros == NErros)
+        {
+            SceneManager.LoadScene(CenaDerrota);
+        }
         if (i == NVezes)
         {
-
+            Shadow.GetComponent<ShadowMovement>().HalfWayShadow();
+            i = 0;
+            erros = 0;
             PassBox.SetActive(false);
             StopCoroutine(CountDown());
             StopCoroutine(KeyPressing());
+            GuiltMeter.QTECount += 1;
             this.enabled = false;
         }
         PassBox.SetActive(true);
@@ -138,25 +153,26 @@ public class QTESystem : MonoBehaviour
             i++;
             CountingDown = 2;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "Sucesso!";
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(TempoParaApertar);
             CorrectKey = 0;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "";
             CurrentDisplayingKey.SetActive(false);
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(TempoParaApertar);
             WaitingForKey = 0;
             CountingDown = 1;
         }
 
         if (CorrectKey == 2)
         {
+            erros += 1;
             i = 0;
             CountingDown = 2;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "Falha!";
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(TempoParaApertar);
             CorrectKey = 0;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "";
             CurrentDisplayingKey.SetActive(false);
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(TempoParaApertar);
             WaitingForKey = 0;
             CountingDown = 1;
         }
@@ -164,18 +180,19 @@ public class QTESystem : MonoBehaviour
 
     IEnumerator CountDown()
     {
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(Intervalo);
         if (CountingDown == 1)
         {
+            erros += 1;
             i++;
             Tecla = 0;
             CountingDown = 2;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "Falha!";
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(TempoParaApertar);
             CorrectKey = 0;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "";
             CurrentDisplayingKey.SetActive(false);
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(TempoParaApertar);
             WaitingForKey = 0;
             CountingDown = 1;
         }

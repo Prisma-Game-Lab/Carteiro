@@ -16,4 +16,4 @@ MonoBehaviour:
   num_buttons: 0
   buttons_pressed: 0
   buttons:
-  - {x: -18, y: 153, z: 0}
+  - {x: 315, y: 172, z: 0}

@@ -8,10 +8,12 @@ public class GuiltMeter : MonoBehaviour
     [SerializeField] private string CenaGameOver;
     [SerializeField] private int MaxGuilt;
     [SerializeField] private GameObject shadow;
+    [SerializeField] private GameObject QTE;
     private float timer;
     private int actualGuilt;
     public int halfGuilt;
     private bool readingGuilt;
+    public static int QTECount = 0;
 
     void Start()
     {
@@ -51,6 +53,11 @@ public class GuiltMeter : MonoBehaviour
         if (actualGuilt == halfGuilt)
         {
             shadow.GetComponent<ShadowMovement>().moveShadow();
+        }
+        else if(actualGuilt == 1 && QTECount < 2)
+        {
+            readingGuilt = false;
+            QTE.GetComponent<QTESystem>().enabled = true;
         }
         else if (actualGuilt <= 0.0f)
         {
