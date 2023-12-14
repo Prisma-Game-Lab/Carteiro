@@ -807,6 +807,37 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6279334135949905989, guid: e83c8a18bc8e583418f6603a94b88a1e, type: 3}
   m_PrefabInstance: {fileID: 6279334136611493823}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &718923807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 718923808}
+  m_Layer: 0
+  m_Name: HalfWay
+  m_TagString: Untagged
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &718923808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718923807}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 24.2, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1929051818}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &841677136
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,7 +1286,7 @@ Transform:
   m_Children:
   - {fileID: 1321437654}
   m_Father: {fileID: 1929051818}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1305251589
 MonoBehaviour:
@@ -1264,7 +1295,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305251587}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99eadb3eedab4c7418021f2741249f27, type: 3}
   m_Name: 
@@ -1274,11 +1305,12 @@ MonoBehaviour:
   Key_A: {fileID: 607862406}
   Key_S: {fileID: 542403341}
   Key_D: {fileID: 1232877771}
+  Shadow: {fileID: 1462879070}
   CenaDerrota: Game_Over
   NVezes: 5
   NErros: 3
-  Intervalo: 2.5
-  TempoParaApertar: 1
+  Intervalo: 2
+  TempoParaApertar: 1.5
 --- !u!1 &1321437653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,6 +1621,7 @@ MonoBehaviour:
   shadow: {fileID: 1462879072}
   frontPlayer: {fileID: 1725834516}
   shadowStart: {fileID: 1600617803}
+  HalfWay: {fileID: 718923808}
   guiltObject: {fileID: 1929051816}
   ShadowRetreatSpeed: 0.8
 --- !u!1 &1469226493
@@ -1832,7 +1865,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1929051818}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1654444879
 GameObject:
@@ -2069,7 +2102,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725834515}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.9, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2381,6 +2414,7 @@ Transform:
   - {fileID: 1469226496}
   - {fileID: 1462879072}
   - {fileID: 1725834516}
+  - {fileID: 718923808}
   - {fileID: 1600617803}
   - {fileID: 1305251588}
   m_Father: {fileID: 0}
@@ -2432,6 +2466,7 @@ MonoBehaviour:
   CenaGameOver: Game_Over
   MaxGuilt: 10
   shadow: {fileID: 1462879070}
+  QTE: {fileID: 1305251587}
   halfGuilt: 0
 --- !u!1 &1966003693
 GameObject:

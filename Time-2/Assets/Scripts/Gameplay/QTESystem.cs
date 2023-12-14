@@ -12,6 +12,7 @@ public class QTESystem : MonoBehaviour
     [SerializeField] private GameObject Key_A;
     [SerializeField] private GameObject Key_S;
     [SerializeField] private GameObject Key_D;
+    [SerializeField] private GameObject Shadow;
     private GameObject CurrentDisplayingKey;
     [SerializeField] private string CenaDerrota;
 
@@ -36,7 +37,9 @@ public class QTESystem : MonoBehaviour
         }
         if (i == NVezes)
         {
-
+            Shadow.GetComponent<ShadowMovement>().HalfWayShadow();
+            i = 0;
+            erros = 0;
             PassBox.SetActive(false);
             StopCoroutine(CountDown());
             StopCoroutine(KeyPressing());
