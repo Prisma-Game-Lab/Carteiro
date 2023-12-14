@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -12,17 +13,25 @@ public class QTESystem : MonoBehaviour
     [SerializeField] private GameObject Key_S;
     [SerializeField] private GameObject Key_D;
     private GameObject CurrentDisplayingKey;
+    [SerializeField] private string CenaDerrota;
 
     [SerializeField] private int Tecla;
-    [SerializeField] private int WaitingForKey;
-    [SerializeField] private int CorrectKey;
-    [SerializeField] private int CountingDown;
+    private int WaitingForKey;
+    private int CorrectKey;
+    private int CountingDown;
     [SerializeField] private int NVezes; // Alterar no editor
+    [SerializeField] private int NErros; // Alterar no editor
+
 
     [SerializeField] private int i = 0;
+    [SerializeField] private int erros = 0;
 
     void Update()
     {
+        if (erros == NErros)
+        {
+            SceneManager.LoadScene(CenaDerrota);
+        }
         if (i == NVezes)
         {
 
@@ -149,6 +158,7 @@ public class QTESystem : MonoBehaviour
 
         if (CorrectKey == 2)
         {
+            erros += 1;
             i = 0;
             CountingDown = 2;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "Falha!";
