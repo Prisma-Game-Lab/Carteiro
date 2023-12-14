@@ -15,16 +15,18 @@ public class QTESystem : MonoBehaviour
     private GameObject CurrentDisplayingKey;
     [SerializeField] private string CenaDerrota;
 
-    [SerializeField] private int Tecla;
+    private int Tecla;
     private int WaitingForKey;
     private int CorrectKey;
     private int CountingDown;
     [SerializeField] private int NVezes; // Alterar no editor
     [SerializeField] private int NErros; // Alterar no editor
+    [SerializeField] private float Intervalo; // Alterar no editor, na duvida 2.5
+    [SerializeField] private float TempoParaApertar; // Alterar no editor, na duvida 1.0
 
 
-    [SerializeField] private int i = 0;
-    [SerializeField] private int erros = 0;
+    private int i = 0;
+    private int erros = 0;
 
     void Update()
     {
@@ -147,11 +149,11 @@ public class QTESystem : MonoBehaviour
             i++;
             CountingDown = 2;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "Sucesso!";
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(TempoParaApertar);
             CorrectKey = 0;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "";
             CurrentDisplayingKey.SetActive(false);
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(TempoParaApertar);
             WaitingForKey = 0;
             CountingDown = 1;
         }
@@ -162,11 +164,11 @@ public class QTESystem : MonoBehaviour
             i = 0;
             CountingDown = 2;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "Falha!";
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(TempoParaApertar);
             CorrectKey = 0;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "";
             CurrentDisplayingKey.SetActive(false);
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(TempoParaApertar);
             WaitingForKey = 0;
             CountingDown = 1;
         }
@@ -174,18 +176,19 @@ public class QTESystem : MonoBehaviour
 
     IEnumerator CountDown()
     {
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(Intervalo);
         if (CountingDown == 1)
         {
+            erros += 1;
             i++;
             Tecla = 0;
             CountingDown = 2;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "Falha!";
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(TempoParaApertar);
             CorrectKey = 0;
             PassBox.GetComponent<TMPro.TextMeshProUGUI>().text = "";
             CurrentDisplayingKey.SetActive(false);
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(TempoParaApertar);
             WaitingForKey = 0;
             CountingDown = 1;
         }
