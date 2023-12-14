@@ -2044,7 +2044,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7962b5a0d65dc844a9d65b0829ac6511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSounds: []
+  musicSounds:
+  - name: Valentin's bossa
+    clip: {fileID: 8300000, guid: 894dfce2f20e47c479939f180749507b, type: 3}
   sfxSounds:
   - name: ButtonHover
     clip: {fileID: 8300000, guid: 2f57b2fd755d0e042bef14271970d783, type: 3}
