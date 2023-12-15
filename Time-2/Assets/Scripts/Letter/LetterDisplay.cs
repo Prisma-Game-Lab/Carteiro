@@ -67,8 +67,11 @@ public class LetterDisplay : MonoBehaviour
             num_buttons += cartas[currentLetter].carta[i].buttons.Length;
         }
 
-        player.GetComponent<GuiltMeter>().startGuilt(lettersGuilt[currentLetter]);
-        Debug.Log(lettersGuilt[currentLetter]);
+        if (player)
+        {
+            player.GetComponent<GuiltMeter>().startGuilt(lettersGuilt[currentLetter]);
+            Debug.Log(lettersGuilt[currentLetter]);
+        }
     }
 
     //Funcao auxiliar que destroi os botoes da carta e limpa o dicionario
