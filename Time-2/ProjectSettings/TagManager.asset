@@ -41,6 +41,9 @@ TagManager:
   - name: BackGround
     uniqueID: 3718366379
     locked: 0
+  - name: Player
+    uniqueID: 1470322657
+    locked: 0
   - name: LevelObjects
     uniqueID: 1275026605
     locked: 0
