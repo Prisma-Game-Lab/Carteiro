@@ -379,13 +379,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1984464217}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 475689492}
+        m_TargetAssemblyTypeName: DialogueDisplay, Assembly-CSharp
+        m_MethodName: atualizaLinhaDialogo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -492,6 +492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_list:
   - {fileID: 11400000, guid: fbad526d6d05f37409b1920cfbff7efb, type: 2}
+  - {fileID: 11400000, guid: 14710a28ca717164b8976bc8a12a7eb9, type: 2}
   npc_image: {fileID: 1125005045}
   npc: {fileID: 247635727}
   dialogue: {fileID: 1984464217}
