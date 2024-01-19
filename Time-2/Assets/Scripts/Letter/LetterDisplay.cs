@@ -39,6 +39,7 @@ public class LetterDisplay : MonoBehaviour
         {
             GameObject button = Instantiate(buttonPrefab, carta.buttons[i], transform.rotation) as GameObject;
 
+            button.transform.localScale = new Vector3(5, 1, 1);
             button.transform.SetParent(canva.transform, false);
 
             button.AddComponent<MouseHoverSFX>();
@@ -67,8 +68,11 @@ public class LetterDisplay : MonoBehaviour
             num_buttons += cartas[currentLetter].carta[i].buttons.Length;
         }
 
-        player.GetComponent<GuiltMeter>().startGuilt(lettersGuilt[currentLetter]);
-        Debug.Log(lettersGuilt[currentLetter]);
+        if (player)
+        {
+            player.GetComponent<GuiltMeter>().startGuilt(lettersGuilt[currentLetter]);
+            Debug.Log(lettersGuilt[currentLetter]);
+        }
     }
 
     //Funcao auxiliar que destroi os botoes da carta e limpa o dicionario
