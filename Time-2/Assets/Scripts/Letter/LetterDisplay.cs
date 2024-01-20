@@ -30,6 +30,9 @@ public class LetterDisplay : MonoBehaviour
 
     [SerializeField] private string CenaVitoria; // tela de vitoria
 
+    [SerializeField] private GameObject CaixaCorreio;
+    [SerializeField] private GameObject CaixaSpawn;
+
     //Inicia botoes da carta no dicionario
     private void iniciaCartaNoDict(Letter carta)
     {
@@ -164,6 +167,9 @@ public class LetterDisplay : MonoBehaviour
 
         if (buttons_pressed == num_buttons && currentLetter + 1 < cartas.Length)
         {
+            GameObject caixa;
+            caixa = Instantiate(CaixaCorreio, new Vector3(CaixaSpawn.transform.position.x, CaixaSpawn.transform.position.y, 0), Quaternion.identity);
+            Debug.Log("MudaCarta");
             atualizaCarta();
         }
         else if(buttons_pressed == num_buttons && currentLetter + 1 >= cartas.Length)
