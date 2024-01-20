@@ -39,7 +39,7 @@ public class LetterDisplay : MonoBehaviour
         {
             GameObject button = Instantiate(buttonPrefab, carta.buttons[i], transform.rotation) as GameObject;
 
-            button.transform.localScale = new Vector3(5, 1, 1);
+            button.transform.localScale = new Vector3(3, 0.5f, 1);
             button.transform.SetParent(canva.transform, false);
 
             button.AddComponent<MouseHoverSFX>();

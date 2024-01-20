@@ -1303,19 +1303,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cartas:
   - carta:
-    - {fileID: 11400000, guid: 113db2ba010094147acf7fc0579826e0, type: 2}
-    - {fileID: 11400000, guid: 23290d1bdeae70b41b443eb0cea1c792, type: 2}
-  - carta:
-    - {fileID: 11400000, guid: ad6ddb2d4c8bcb348b6b964404c36ec4, type: 2}
-    - {fileID: 11400000, guid: 6d3a275301c1e064eb045846c5b7229d, type: 2}
-  - carta:
-    - {fileID: 11400000, guid: 8c54098b6579e734eb398c9f37091634, type: 2}
-    - {fileID: 11400000, guid: ba33d0973459a664382adbbd5c0d73a7, type: 2}
+    - {fileID: 11400000, guid: 922afed3c8a2b774a987d70074562a74, type: 2}
   buttonPrefab: {fileID: 5740248797553913915, guid: 1fd583f921d485b4299b8023fb46f338, type: 3}
   paragraph: {fileID: 0}
   num_buttons: 0
   lettersGuilt: 
   player: {fileID: 0}
+  CenaVitoria: 
 --- !u!114 &1654017390
 MonoBehaviour:
   m_ObjectHideFlags: 0
