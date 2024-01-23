@@ -57,6 +57,8 @@ public class GuiltMeter : MonoBehaviour
         else if(actualGuilt == 1 && QTECount < 2)
         {
             readingGuilt = false;
+            AudioManager.Instance.sfxSource.Stop();
+            AudioManager.Instance.PlaySFX("QTE");
             QTE.GetComponent<QTESystem>().enabled = true;
         }
         else if (actualGuilt <= 0.0f)

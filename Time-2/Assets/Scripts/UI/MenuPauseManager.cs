@@ -61,9 +61,10 @@ public class MenuPauseManager : MonoBehaviour
         JogoEstaPausado = true;
     }
 
-    //Botões
+    //Botï¿½es
     public void BotaoPausar()
     {
+        AudioManager.Instance.PlaySFX("Pause");
         Pausar();
     }
     public void BotaoRetornar()

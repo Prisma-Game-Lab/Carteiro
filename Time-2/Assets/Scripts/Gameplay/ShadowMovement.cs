@@ -47,16 +47,21 @@ public class ShadowMovement : MonoBehaviour
     }
 
     public void moveShadow(){
+        AudioManager.Instance.sfxSource.Stop();
+        AudioManager.Instance.PlaySFX("SombraChega");
         startMovement = 1;
     }
 
     public void HalfWayShadow()
     {
         startMovement = 2;
+        AudioManager.Instance.PlaySFX("SombraSai");
         Invoke("RestartGuilt", 3);
     }
     public void retreatShadow()
     {
+        AudioManager.Instance.sfxSource.Stop();
+        AudioManager.Instance.PlaySFX("SombraSai");
         startMovement = 0;
     }
 

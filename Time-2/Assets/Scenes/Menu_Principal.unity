@@ -547,7 +547,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 834.73, y: -447.05}
+  m_AnchoredPosition: {x: 846, y: -451}
   m_SizeDelta: {x: 181.9, y: 127}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &246020676
@@ -1073,7 +1073,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eea729ec0b904fe4387ab1be0007435a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 150037b19fd979040b279f6f3dc63986, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1483,7 +1483,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 500, y: 240.85}
+  m_AnchoredPosition: {x: -69.745, y: -211.82}
   m_SizeDelta: {x: 774.43, y: 343.47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1641208393
@@ -1530,9 +1530,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2122675564}
-        m_TargetAssemblyTypeName: MenuPrincipalManager, Assembly-CSharp
-        m_MethodName: Jogar
+      - m_Target: {fileID: 2122675566}
+        m_TargetAssemblyTypeName: UIClickSound, Assembly-CSharp
+        m_MethodName: ClickSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1794,7 +1794,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 500, y: -303}
+  m_AnchoredPosition: {x: 442, y: -448}
   m_SizeDelta: {x: 395.06, y: 131.69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1906701575
@@ -1841,9 +1841,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2122675564}
-        m_TargetAssemblyTypeName: MenuPrincipalManager, Assembly-CSharp
-        m_MethodName: Sair
+      - m_Target: {fileID: 2122675566}
+        m_TargetAssemblyTypeName: UIClickSound, Assembly-CSharp
+        m_MethodName: ClickSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1950,7 +1950,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 500, y: -78}
+  m_AnchoredPosition: {x: 557, y: -192}
   m_SizeDelta: {x: 561.05, y: 187.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1976352053
@@ -1997,9 +1997,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2122675564}
-        m_TargetAssemblyTypeName: MenuPrincipalManager, Assembly-CSharp
-        m_MethodName: AbrirOpcoes
+      - m_Target: {fileID: 2122675566}
+        m_TargetAssemblyTypeName: UIClickSound, Assembly-CSharp
+        m_MethodName: ClickSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2078,6 +2078,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2122675565}
   - component: {fileID: 2122675564}
+  - component: {fileID: 2122675566}
   m_Layer: 0
   m_Name: MenuManager
   m_TagString: Untagged
@@ -2115,3 +2116,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2122675566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122675563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a307a8b858006fc45af50baa681f863e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

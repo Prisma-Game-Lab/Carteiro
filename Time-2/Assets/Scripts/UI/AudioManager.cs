@@ -6,8 +6,8 @@ using System;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;    
-    public Sound[] musicSounds, sfxSounds;
-    public AudioSource musicSource, sfxSource;
+    public Sound[] musicSounds, sfxSounds, sfxcSounds;
+    public AudioSource musicSource, sfxSource, sfxcSource;
 
 
     private void Awake()
@@ -54,6 +54,20 @@ public class AudioManager : MonoBehaviour
         else
         {
             sfxSource.PlayOneShot(s.clip);
+        }
+    }
+
+    public void PlaySFXC(string name)
+    {
+        Sound s = Array.Find(sfxcSounds, x => x.name == name);
+
+        if (s == null)
+        {
+            Debug.Log("SFXC nao encontrado");
+        }
+        else
+        {
+            sfxcSource.PlayOneShot(s.clip);
         }
     }
 }
