@@ -10,7 +10,6 @@ public class LevelSelectManager : MonoBehaviour
     [SerializeField] private string cenaFase2;
     [SerializeField] private string cenaFase3;
     [SerializeField] private string menuPrincipal;
-    [SerializeField] private GameObject bloqueador1;
     [SerializeField] private GameObject bloqueador2;
     [SerializeField] private GameObject bloqueador3;
 
@@ -37,10 +36,8 @@ public class LevelSelectManager : MonoBehaviour
 
     public void Fase1()
     {
-        if (bloqueador1.gameObject.activeInHierarchy == false)
-        {
-            SceneManager.LoadScene(cenaFase1);
-        }
+        SceneManager.LoadScene(cenaFase1);
+
     }
     public void Fase2()
     {
