@@ -9,6 +9,7 @@ public class MenuPrincipalManager : MonoBehaviour
     [SerializeField] private string cenaDoJogoJogar;
     [SerializeField] private string cenaDoJogoOpcoes;
     [SerializeField] private GameObject PainelAjuda;
+    [SerializeField] private GameObject PainelCreditos;
     public static string cenaRetorno;
     public void Jogar()
     {
@@ -38,4 +39,13 @@ public class MenuPrincipalManager : MonoBehaviour
         PainelAjuda.SetActive(false);
     }
 
+    public void Creditos()
+    {
+        PainelCreditos.SetActive(true);
+    }
+
+    public void FecharCreditos()
+    {
+        PainelCreditos.SetActive(false);
+    }
 }
