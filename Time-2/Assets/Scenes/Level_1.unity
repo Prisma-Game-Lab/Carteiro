@@ -774,6 +774,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: MenuPauseManager, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 756878758925880583, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ae8b018e5fd08d84b9d8861b1b3a29f8, type: 3}
     - target: {fileID: 756878759839469920, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3753,6 +3757,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1376924319}
     m_Modifications:
+    - target: {fileID: 6279334135949905988, guid: e83c8a18bc8e583418f6603a94b88a1e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 709259f2f8970e44886d7766770e5a3a, type: 3}
     - target: {fileID: 6279334135949905989, guid: e83c8a18bc8e583418f6603a94b88a1e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
