@@ -2635,7 +2635,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.05
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3619,7 +3619,7 @@ MonoBehaviour:
   - name: TrocaPagina
     clip: {fileID: 8300000, guid: 357b7e0bbd1eb7244be592af67a1509e, type: 3}
   - name: SombraChega
-    clip: {fileID: 8300000, guid: e89042db00e725b4c9f0af874d9bd3dc, type: 3}
+    clip: {fileID: 8300000, guid: 64d68a4bb738ac54abc831ba5e9c2a7e, type: 3}
   - name: SombraSai
     clip: {fileID: 8300000, guid: e89042db00e725b4c9f0af874d9bd3dc, type: 3}
   sfxcSounds:

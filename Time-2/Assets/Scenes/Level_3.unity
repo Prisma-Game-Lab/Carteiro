@@ -926,7 +926,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1929051818}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &841677136
 GameObject:
@@ -1737,7 +1737,7 @@ Transform:
   m_Children:
   - {fileID: 1321437654}
   m_Father: {fileID: 1929051818}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1305251589
 MonoBehaviour:
@@ -2316,7 +2316,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1929051818}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1654444879
 GameObject:
@@ -2950,6 +2950,7 @@ Transform:
   - {fileID: 18908673}
   - {fileID: 1462879072}
   - {fileID: 1725834516}
+  - {fileID: 1935918830}
   - {fileID: 718923808}
   - {fileID: 1600617803}
   - {fileID: 1305251588}
@@ -3004,6 +3005,37 @@ MonoBehaviour:
   shadow: {fileID: 1462879070}
   QTE: {fileID: 1305251587}
   halfGuilt: 0
+--- !u!1 &1935918829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1935918830}
+  m_Layer: 0
+  m_Name: MailBoxPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1935918830
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935918829}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 42.699997, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1929051818}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1966003693
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,8 +3093,8 @@ MonoBehaviour:
   player: {fileID: 1929051816}
   CenaLobby: Menu_Principal
   CenaVitoria: Vitoria
-  CaixaCorreio: {fileID: 0}
-  CaixaSpawn: {fileID: 0}
+  CaixaCorreio: {fileID: 3192528576607185904, guid: 89101f8c912ca7d47a71d8852c357387, type: 3}
+  CaixaSpawn: {fileID: 1935918829}
   LevelAtual: 3
 --- !u!114 &1966003695
 MonoBehaviour:

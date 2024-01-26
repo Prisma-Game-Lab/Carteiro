@@ -159,6 +159,7 @@ public class LetterDisplay : MonoBehaviour
             num_buttons += cartas[currentLetter].carta[i].buttons.Length;
         }
 
+        AudioManager.Instance.sfxSource.Stop();
         player.GetComponent<GuiltMeter>().startGuilt(lettersGuilt[currentLetter]);
     }
 
@@ -173,7 +174,7 @@ public class LetterDisplay : MonoBehaviour
         {
             GameObject caixa;
             caixa = Instantiate(CaixaCorreio, new Vector3(CaixaSpawn.transform.position.x, CaixaSpawn.transform.position.y, 0), Quaternion.identity);
-            Debug.Log("MudaCarta");
+            AudioManager.Instance.sfxSource.Stop();
             atualizaCarta();
         }
         // vitoria do nivel
@@ -225,6 +226,7 @@ public class LetterDisplay : MonoBehaviour
             num_buttons += cartas[currentLetter].carta[i].buttons.Length;
         }
 
+        AudioManager.Instance.sfxSource.Stop();
         player.GetComponent<GuiltMeter>().startGuilt(lettersGuilt[currentLetter]);
     }
 }
