@@ -26,8 +26,8 @@ public class QTESystem : MonoBehaviour
     [SerializeField] private float TempoParaApertar; // Alterar no editor, na duvida 1.0
 
 
-    private int i = 0;
-    private int erros = 0;
+    public static int i = 0;
+    public static int erros = 0;
 
     void Update()
     {

@@ -46,6 +46,8 @@ public class GuiltMeter : MonoBehaviour
     {
         readingGuilt = false;
         shadow.GetComponent<ShadowMovement>().retreatShadow();
+        QTESystem.erros = 0;
+        QTESystem.i = 0;
     }
 
     private void CheckGuilt()

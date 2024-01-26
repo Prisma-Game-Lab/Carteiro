@@ -172,6 +172,7 @@ public class LetterDisplay : MonoBehaviour
             Debug.Log("MudaCarta");
             atualizaCarta();
         }
+        // vitoria do nivel
         else if(buttons_pressed == num_buttons && currentLetter + 1 >= cartas.Length)
         {
             SceneManager.LoadScene(CenaVitoria);
