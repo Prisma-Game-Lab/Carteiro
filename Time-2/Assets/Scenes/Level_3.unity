@@ -3116,9 +3116,13 @@ MonoBehaviour:
   num_buttons: 0
   lettersGuilt: 140000001e00000028000000
   player: {fileID: 1929051816}
+  CenaLobby: Menu_Principal
   CenaVitoria: Vitoria
   CaixaCorreio: {fileID: 0}
   CaixaSpawn: {fileID: 0}
+  LevelAtual: 3
+  level2Unlocked: 1
+  level3Unlocked: 1
 --- !u!114 &1966003695
 MonoBehaviour:
   m_ObjectHideFlags: 0

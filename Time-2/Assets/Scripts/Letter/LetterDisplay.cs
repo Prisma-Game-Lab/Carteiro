@@ -28,10 +28,16 @@ public class LetterDisplay : MonoBehaviour
     [SerializeField] private int[] lettersGuilt;
     public GameObject player;
 
+    [SerializeField] private string CenaLobby;
     [SerializeField] private string CenaVitoria; // tela de vitoria
 
     [SerializeField] private GameObject CaixaCorreio;
     [SerializeField] private GameObject CaixaSpawn;
+
+    // sistema de save
+    [SerializeField] private int LevelAtual;
+    public bool level2Unlocked = false;
+    public bool level3Unlocked = false;
 
     //Inicia botoes da carta no dicionario
     private void iniciaCartaNoDict(Letter carta)
@@ -175,7 +181,22 @@ public class LetterDisplay : MonoBehaviour
         // vitoria do nivel
         else if(buttons_pressed == num_buttons && currentLetter + 1 >= cartas.Length)
         {
-            SceneManager.LoadScene(CenaVitoria);
+            if(LevelAtual == 1)
+            {
+                level2Unlocked = true;
+                SaveSystem.SaveData(this);
+                SceneManager.LoadScene(CenaLobby);
+            }
+            if(LevelAtual == 2)
+            {
+                level3Unlocked = true;
+                SaveSystem.SaveData(this);
+                SceneManager.LoadScene(CenaLobby);
+            }
+            if(LevelAtual == 3)
+            {
+                SceneManager.LoadScene(CenaVitoria);
+            }
         }
     }
 

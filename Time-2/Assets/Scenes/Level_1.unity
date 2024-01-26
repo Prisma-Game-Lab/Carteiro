@@ -714,90 +714,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1376924319}
     m_Modifications:
-    - target: {fileID: 756878758925880580, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 756878758925880580, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 756878758925880580, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 756878758925880580, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 756878758925880580, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 756878758925880580, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 756878758925880580, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 756878758925880580, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 756878758925880580, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -100
-      objectReference: {fileID: 0}
-    - target: {fileID: 756878758925880582, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: m_Transition
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 756878758925880582, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 756878758925880582, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 756878758925880582, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 11500000, guid: 7962b5a0d65dc844a9d65b0829ac6511, type: 3}
-    - target: {fileID: 756878758925880582, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 756878758925880582, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: MenuPauseManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 756878758925880583, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: ae8b018e5fd08d84b9d8861b1b3a29f8, type: 3}
-    - target: {fileID: 756878759839469920, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 756878760021290028, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: BotaoPause
-      value: 
-      objectReference: {fileID: 892242925}
     - target: {fileID: 756878760021290028, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
       propertyPath: PainelAjuda
       value: 
       objectReference: {fileID: 1859385207}
-    - target: {fileID: 756878760021290028, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: PainelInicio
-      value: 
-      objectReference: {fileID: 1859385207}
-    - target: {fileID: 756878760021290028, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: cenaDoJogoOpcoes
-      value: "Configura\xE7\xF5es"
-      objectReference: {fileID: 0}
     - target: {fileID: 4343844913107381622, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
       propertyPath: m_Name
       value: Pause
@@ -1120,32 +1040,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &892242925 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 756878758925880587, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-  m_PrefabInstance: {fileID: 673962648}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &892242931
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 892242925}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a68adb7ff7a13844895a74d6b048848a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &924104130
 GameObject:
   m_ObjectHideFlags: 0
@@ -3421,12 +3315,16 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 922afed3c8a2b774a987d70074562a74, type: 2}
   buttonPrefab: {fileID: 5740248797553913915, guid: 1fd583f921d485b4299b8023fb46f338, type: 3}
   paragraph: {fileID: 0}
-  num_buttons: 0
+  num_buttons: 1
   lettersGuilt: 140000001e00000028000000
   player: {fileID: 1929051816}
+  CenaLobby: Menu_Principal
   CenaVitoria: Vitoria
   CaixaCorreio: {fileID: 3192528576607185904, guid: 89101f8c912ca7d47a71d8852c357387, type: 3}
   CaixaSpawn: {fileID: 670104583}
+  LevelAtual: 0
+  level2Unlocked: 0
+  level3Unlocked: 0
 --- !u!114 &1966003695
 MonoBehaviour:
   m_ObjectHideFlags: 0

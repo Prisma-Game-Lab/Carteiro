@@ -226,6 +226,7 @@ GameObject:
   - component: {fileID: 756878758925880583}
   - component: {fileID: 756878758925880582}
   - component: {fileID: 756878758925880581}
+  - component: {fileID: 892242931}
   m_Layer: 5
   m_Name: Botao de Pause
   m_TagString: Untagged
@@ -250,7 +251,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -809.99994, y: 348.41223}
+  m_AnchoredPosition: {x: 100, y: -100}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &756878758925880576
@@ -281,7 +282,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0ee00664c2acfee4c9974c8c7c681920, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae8b018e5fd08d84b9d8861b1b3a29f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -310,7 +311,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -359,6 +360,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 642503d484f667945b55236bb6253c64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &892242931
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756878758925880587}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a68adb7ff7a13844895a74d6b048848a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &756878758987755451
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,9 +907,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cenaDoJogoSair: Menu_Principal
-  cenaDoJogoOpcoes: "Menu_\xC1udio"
+  cenaDoJogoOpcoes: "Configura\xE7\xF5es"
   MenuPause: {fileID: 756878759839469920}
-  BotaoPause: {fileID: 3976420606157223488, guid: eac65757378e538488bb2b556e11adcc, type: 3}
+  PainelAjuda: {fileID: 0}
+  BotaoPause: {fileID: 756878758925880587}
 --- !u!1 &756878760274250636
 GameObject:
   m_ObjectHideFlags: 0
