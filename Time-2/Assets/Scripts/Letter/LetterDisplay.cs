@@ -36,8 +36,6 @@ public class LetterDisplay : MonoBehaviour
 
     // sistema de save
     [SerializeField] private int LevelAtual;
-    public bool level2Unlocked = false;
-    public bool level3Unlocked = false;
 
     //Inicia botoes da carta no dicionario
     private void iniciaCartaNoDict(Letter carta)
@@ -183,14 +181,12 @@ public class LetterDisplay : MonoBehaviour
         {
             if(LevelAtual == 1)
             {
-                level2Unlocked = true;
-                SaveSystem.SaveData(this);
+                PlayerPrefs.SetInt("Level1Completo", 2);
                 SceneManager.LoadScene(CenaLobby);
             }
             if(LevelAtual == 2)
             {
-                level3Unlocked = true;
-                SaveSystem.SaveData(this);
+                PlayerPrefs.SetInt("Level2Completo", 2);
                 SceneManager.LoadScene(CenaLobby);
             }
             if(LevelAtual == 3)

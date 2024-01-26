@@ -11,6 +11,7 @@ public class MenuPrincipalManager : MonoBehaviour
     [SerializeField] private GameObject PainelAjuda;
     [SerializeField] private GameObject PainelCreditos;
     public static string cenaRetorno;
+
     public void Jogar()
     {
         SceneManager.LoadScene(cenaDoJogoJogar);
