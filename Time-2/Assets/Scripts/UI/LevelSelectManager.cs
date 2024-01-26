@@ -13,7 +13,7 @@ public class LevelSelectManager : MonoBehaviour
     [SerializeField] private GameObject bloqueador2;
     [SerializeField] private GameObject bloqueador3;
 
-    void Start()
+    void Update()
     {
         if(PlayerPrefs.GetInt("Level1Completo", 1) == 2)
         {
