@@ -1303,7 +1303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cartas:
   - carta:
-    - {fileID: 11400000, guid: 04ea18e7c4123c148b83833130cc7300, type: 2}
+    - {fileID: 11400000, guid: cbc8ac65632bd194693bd184524d736b, type: 2}
   buttonPrefab: {fileID: 5740248797553913915, guid: 1fd583f921d485b4299b8023fb46f338, type: 3}
   paragraph: {fileID: 0}
   num_buttons: 0

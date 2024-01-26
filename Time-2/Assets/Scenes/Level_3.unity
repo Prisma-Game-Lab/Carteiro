@@ -3060,6 +3060,8 @@ MonoBehaviour:
   lettersGuilt: 140000001e00000028000000
   player: {fileID: 1929051816}
   CenaVitoria: Vitoria
+  CaixaCorreio: {fileID: 0}
+  CaixaSpawn: {fileID: 0}
 --- !u!114 &1966003695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3402,8 +3404,10 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 4e7e2abf057c58841a993826ca728832, type: 3}
   - name: Escrita2
     clip: {fileID: 8300000, guid: 9fb6678360e588b49a2e63aea3aef915, type: 3}
+  sfxcSounds: []
   musicSource: {fileID: 697210368}
   sfxSource: {fileID: 1502483465}
+  sfxcSource: {fileID: 0}
 --- !u!4 &2043232340
 Transform:
   m_ObjectHideFlags: 0
