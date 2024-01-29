@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 756878758819222868}
   - component: {fileID: 756878758819222875}
   - component: {fileID: 756878758819222874}
+  - component: {fileID: 885145687022342811}
   m_Layer: 5
   m_Name: Button(Sair)
   m_TagString: Untagged
@@ -201,18 +202,30 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 756878760021290028}
-        m_TargetAssemblyTypeName: MenuPauseManager, Assembly-CSharp
-        m_MethodName: BotaoSair
-        m_Mode: 1
+      - m_Target: {fileID: 885145687022342811}
+        m_TargetAssemblyTypeName: ButtonToScene, Assembly-CSharp
+        m_MethodName: goToScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Menu_Principal
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
+--- !u!114 &885145687022342811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756878758819222872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f28df906e1b911468cb47ad4ea41889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &756878758925880587
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,7 +324,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 3
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -355,7 +368,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756878758925880587}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 642503d484f667945b55236bb6253c64, type: 3}
   m_Name: 
@@ -527,6 +540,7 @@ GameObject:
   - component: {fileID: 756878759373955875}
   - component: {fileID: 756878759373955874}
   - component: {fileID: 756878759373955873}
+  - component: {fileID: 9114824171423213598}
   m_Layer: 5
   m_Name: "Button(Op\xE7\xF5es)"
   m_TagString: Untagged
@@ -637,18 +651,30 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 756878760021290028}
-        m_TargetAssemblyTypeName: MenuPauseManager, Assembly-CSharp
-        m_MethodName: BotaoAbrirOpcoes
-        m_Mode: 1
+      - m_Target: {fileID: 9114824171423213598}
+        m_TargetAssemblyTypeName: ButtonToScene, Assembly-CSharp
+        m_MethodName: goToScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: "Configura\xE7\xF5es"
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
+--- !u!114 &9114824171423213598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756878759373955879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f28df906e1b911468cb47ad4ea41889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &756878759552925498
 GameObject:
   m_ObjectHideFlags: 0

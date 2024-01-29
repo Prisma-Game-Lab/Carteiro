@@ -32,21 +32,20 @@ public class LevelSelectManager : MonoBehaviour
 
     public void Fase1()
     {
-        SceneManager.LoadScene(cenaFase1);
-
+        SceneTransition.Instance.GoToScene(cenaFase1);
     }
     public void Fase2()
     {
         if (bloqueador2.gameObject.activeInHierarchy == false)
         {
-            SceneManager.LoadScene(cenaFase2);
+            SceneTransition.Instance.GoToScene(cenaFase2);
         }
     }
     public void Fase3()
     {
         if (bloqueador3.gameObject.activeInHierarchy == false)
         {
-            SceneManager.LoadScene(cenaFase3);
+            SceneTransition.Instance.GoToScene(cenaFase3);
         }
     }
 }

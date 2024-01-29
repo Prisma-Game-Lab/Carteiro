@@ -723,6 +723,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 2122675566}
+        m_TargetAssemblyTypeName: UIClickSound, Assembly-CSharp
+        m_MethodName: ClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &246020677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -988,6 +1000,63 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1001 &832167949
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1466388356819711942, guid: bad1b81c55829f040afe69f0a5b48bea, type: 3}
+      propertyPath: m_Name
+      value: SceneTransition
+      objectReference: {fileID: 0}
+    - target: {fileID: 2653967186548832866, guid: bad1b81c55829f040afe69f0a5b48bea, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2653967186548832866, guid: bad1b81c55829f040afe69f0a5b48bea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 505.99976
+      objectReference: {fileID: 0}
+    - target: {fileID: 2653967186548832866, guid: bad1b81c55829f040afe69f0a5b48bea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 284.50003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2653967186548832866, guid: bad1b81c55829f040afe69f0a5b48bea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2653967186548832866, guid: bad1b81c55829f040afe69f0a5b48bea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2653967186548832866, guid: bad1b81c55829f040afe69f0a5b48bea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2653967186548832866, guid: bad1b81c55829f040afe69f0a5b48bea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2653967186548832866, guid: bad1b81c55829f040afe69f0a5b48bea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2653967186548832866, guid: bad1b81c55829f040afe69f0a5b48bea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2653967186548832866, guid: bad1b81c55829f040afe69f0a5b48bea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2653967186548832866, guid: bad1b81c55829f040afe69f0a5b48bea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bad1b81c55829f040afe69f0a5b48bea, type: 3}
 --- !u!1 &862400587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,6 +1134,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862400587}
   m_CullTransparentMesh: 1
+--- !u!1001 &907208988
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4373593972917985449, guid: 1b54390c5671c47449278932d25623e5, type: 3}
+      propertyPath: m_Name
+      value: Audio Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373593972917985455, guid: 1b54390c5671c47449278932d25623e5, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373593972917985455, guid: 1b54390c5671c47449278932d25623e5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373593972917985455, guid: 1b54390c5671c47449278932d25623e5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373593972917985455, guid: 1b54390c5671c47449278932d25623e5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373593972917985455, guid: 1b54390c5671c47449278932d25623e5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373593972917985455, guid: 1b54390c5671c47449278932d25623e5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373593972917985455, guid: 1b54390c5671c47449278932d25623e5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373593972917985455, guid: 1b54390c5671c47449278932d25623e5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373593972917985455, guid: 1b54390c5671c47449278932d25623e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373593972917985455, guid: 1b54390c5671c47449278932d25623e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373593972917985455, guid: 1b54390c5671c47449278932d25623e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1b54390c5671c47449278932d25623e5, type: 3}
 --- !u!1 &958469687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,6 +1355,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 2122675566}
+        m_TargetAssemblyTypeName: UIClickSound, Assembly-CSharp
+        m_MethodName: ClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1110424942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2018,6 +2156,7 @@ GameObject:
   - component: {fileID: 1641208394}
   - component: {fileID: 1641208393}
   - component: {fileID: 1641208396}
+  - component: {fileID: 1641208397}
   m_Layer: 5
   m_Name: Button (Jogar)
   m_TagString: Untagged
@@ -2090,16 +2229,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2122675564}
-        m_TargetAssemblyTypeName: MenuPrincipalManager, Assembly-CSharp
-        m_MethodName: Jogar
-        m_Mode: 1
+      - m_Target: {fileID: 1641208397}
+        m_TargetAssemblyTypeName: ButtonToScene, Assembly-CSharp
+        m_MethodName: goToScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level_Select
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 2122675566}
@@ -2173,6 +2312,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1641208397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641208391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f28df906e1b911468cb47ad4ea41889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1746200135
 GameObject:
   m_ObjectHideFlags: 0
@@ -2269,6 +2420,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 2122675566}
+        m_TargetAssemblyTypeName: UIClickSound, Assembly-CSharp
+        m_MethodName: ClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1746200138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2509,6 +2672,7 @@ GameObject:
   - component: {fileID: 1976352054}
   - component: {fileID: 1976352053}
   - component: {fileID: 1976352056}
+  - component: {fileID: 1976352057}
   m_Layer: 5
   m_Name: Button (Opcoes)
   m_TagString: Untagged
@@ -2581,16 +2745,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2122675564}
-        m_TargetAssemblyTypeName: MenuPrincipalManager, Assembly-CSharp
-        m_MethodName: AbrirOpcoes
-        m_Mode: 1
+      - m_Target: {fileID: 1976352057}
+        m_TargetAssemblyTypeName: ButtonToScene, Assembly-CSharp
+        m_MethodName: goToScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: "Configura\xE7\xF5es"
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 2122675566}
@@ -2664,6 +2828,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1976352057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976352051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f28df906e1b911468cb47ad4ea41889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2118997577
 GameObject:
   m_ObjectHideFlags: 0
@@ -2770,8 +2946,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ba531d54e7e54c488d5556e3121a734, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cenaDoJogoJogar: Level_Select
-  cenaDoJogoOpcoes: "Configura\xE7\xF5es"
   PainelAjuda: {fileID: 801656239}
   PainelCreditos: {fileID: 18522756}
 --- !u!4 &2122675565

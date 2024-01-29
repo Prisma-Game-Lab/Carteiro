@@ -147,6 +147,7 @@ public class QTESystem : MonoBehaviour
 
     IEnumerator KeyPressing()
     {
+        AudioManager.Instance.PlaySFX("QTE");
         Tecla = 0;
         if (CorrectKey == 1)
         {

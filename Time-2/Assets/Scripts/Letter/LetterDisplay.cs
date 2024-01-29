@@ -78,7 +78,6 @@ public class LetterDisplay : MonoBehaviour
         if (player)
         {
             player.GetComponent<GuiltMeter>().startGuilt(lettersGuilt[currentLetter]);
-            Debug.Log(lettersGuilt[currentLetter]);
         }
     }
 
@@ -183,16 +182,16 @@ public class LetterDisplay : MonoBehaviour
             if(LevelAtual == 1)
             {
                 PlayerPrefs.SetInt("Level1Completo", 2);
-                SceneManager.LoadScene(CenaLobby);
+                SceneTransition.Instance.GoToScene(CenaLobby);
             }
             if(LevelAtual == 2)
             {
                 PlayerPrefs.SetInt("Level2Completo", 2);
-                SceneManager.LoadScene(CenaLobby);
+                SceneTransition.Instance.GoToScene(CenaLobby);
             }
             if(LevelAtual == 3)
             {
-                SceneManager.LoadScene(CenaVitoria);
+                SceneTransition.Instance.GoToScene("Final_Scene");
             }
         }
     }
