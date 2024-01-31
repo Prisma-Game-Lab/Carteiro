@@ -202,10 +202,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 885145687022342811}
-        m_TargetAssemblyTypeName: ButtonToScene, Assembly-CSharp
-        m_MethodName: goToScene
-        m_Mode: 5
+      - m_Target: {fileID: 756878760021290028}
+        m_TargetAssemblyTypeName: MenuPauseManager, Assembly-CSharp
+        m_MethodName: BotaoSair
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -651,10 +651,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9114824171423213598}
-        m_TargetAssemblyTypeName: ButtonToScene, Assembly-CSharp
-        m_MethodName: goToScene
-        m_Mode: 5
+      - m_Target: {fileID: 756878760021290028}
+        m_TargetAssemblyTypeName: MenuPauseManager, Assembly-CSharp
+        m_MethodName: BotaoAbrirOpcoes
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
