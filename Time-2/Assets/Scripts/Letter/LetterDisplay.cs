@@ -28,7 +28,14 @@ public class LetterDisplay : MonoBehaviour
     [SerializeField] private int[] lettersGuilt;
     public GameObject player;
 
+    [SerializeField] private string CenaLobby;
     [SerializeField] private string CenaVitoria; // tela de vitoria
+
+    [SerializeField] private GameObject CaixaCorreio;
+    [SerializeField] private GameObject CaixaSpawn;
+
+    // sistema de save
+    [SerializeField] private int LevelAtual;
 
     //Inicia botoes da carta no dicionario
     private void iniciaCartaNoDict(Letter carta)
@@ -39,7 +46,7 @@ public class LetterDisplay : MonoBehaviour
         {
             GameObject button = Instantiate(buttonPrefab, carta.buttons[i], transform.rotation) as GameObject;
 
-            button.transform.localScale = new Vector3(5, 1, 1);
+            button.transform.localScale = new Vector3(3, 0.5f, 1);
             button.transform.SetParent(canva.transform, false);
 
             button.AddComponent<MouseHoverSFX>();
@@ -71,7 +78,6 @@ public class LetterDisplay : MonoBehaviour
         if (player)
         {
             player.GetComponent<GuiltMeter>().startGuilt(lettersGuilt[currentLetter]);
-            Debug.Log(lettersGuilt[currentLetter]);
         }
     }
 
@@ -152,6 +158,7 @@ public class LetterDisplay : MonoBehaviour
             num_buttons += cartas[currentLetter].carta[i].buttons.Length;
         }
 
+        AudioManager.Instance.sfxSource.Stop();
         player.GetComponent<GuiltMeter>().startGuilt(lettersGuilt[currentLetter]);
     }
 
@@ -164,11 +171,28 @@ public class LetterDisplay : MonoBehaviour
 
         if (buttons_pressed == num_buttons && currentLetter + 1 < cartas.Length)
         {
+            GameObject caixa;
+            caixa = Instantiate(CaixaCorreio, new Vector3(CaixaSpawn.transform.position.x, CaixaSpawn.transform.position.y, 0), Quaternion.identity);
+            AudioManager.Instance.sfxSource.Stop();
             atualizaCarta();
         }
+        // vitoria do nivel
         else if(buttons_pressed == num_buttons && currentLetter + 1 >= cartas.Length)
         {
-            SceneManager.LoadScene(CenaVitoria);
+            if(LevelAtual == 1)
+            {
+                PlayerPrefs.SetInt("Level1Completo", 2);
+                SceneTransition.Instance.GoToScene(CenaLobby);
+            }
+            if(LevelAtual == 2)
+            {
+                PlayerPrefs.SetInt("Level2Completo", 2);
+                SceneTransition.Instance.GoToScene(CenaLobby);
+            }
+            if(LevelAtual == 3)
+            {
+                SceneTransition.Instance.GoToScene("Final_Scene");
+            }
         }
     }
 
@@ -201,6 +225,7 @@ public class LetterDisplay : MonoBehaviour
             num_buttons += cartas[currentLetter].carta[i].buttons.Length;
         }
 
+        AudioManager.Instance.sfxSource.Stop();
         player.GetComponent<GuiltMeter>().startGuilt(lettersGuilt[currentLetter]);
     }
 }

@@ -1,13 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;    
-    public Sound[] musicSounds, sfxSounds;
-    public AudioSource musicSource, sfxSource;
+    public Sound[] musicSounds, sfxSounds, sfxcSounds;
+    public AudioSource musicSource, sfxSource, sfxcSource;
 
 
     private void Awake()
@@ -25,7 +23,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        PlayMusic("Theme");
+        PlayMusic("Valentin's bossa");
     }
 
     public void PlayMusic(string name)
@@ -56,4 +54,24 @@ public class AudioManager : MonoBehaviour
             sfxSource.PlayOneShot(s.clip);
         }
     }
+
+    public void PlaySFXC(string name)
+    {
+        Sound s = Array.Find(sfxcSounds, x => x.name == name);
+
+        if (s == null)
+        {
+            Debug.Log("SFXC nao encontrado");
+        }
+        else
+        {
+            sfxcSource.PlayOneShot(s.clip);
+        }
+    }
+
+    public void UIClick()
+    {
+        PlaySFX("CliqueUI");
+    }
+
 }

@@ -61,9 +61,10 @@ public class MenuPauseManager : MonoBehaviour
         JogoEstaPausado = true;
     }
 
-    //Bot�es
+    //Bot�es
     public void BotaoPausar()
     {
+        AudioManager.Instance.PlaySFX("Pause");
         Pausar();
     }
     public void BotaoRetornar()
@@ -74,13 +75,13 @@ public class MenuPauseManager : MonoBehaviour
     public void BotaoAbrirOpcoes()
     {
         MenuPrincipalManager.cenaRetorno = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(cenaDoJogoOpcoes);
+        SceneTransition.Instance.GoToScene("Configurações");
         Despausar();
     }
 
     public void BotaoSair()
     {
-        SceneManager.LoadScene(cenaDoJogoSair);
+        SceneTransition.Instance.GoToScene("Menu_Principal");
         Despausar();
     }
 

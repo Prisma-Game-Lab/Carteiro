@@ -28,31 +28,31 @@ public class GameOverManager : MonoBehaviour
                 TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "Fim de jogo!";
                 break;
             case 4:
-                TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "Você o abandonou...";
+                TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "Vocï¿½ o abandonou...";
                 break;
             case 5:
-                TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "Por que você não volta?";
+                TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "Por que vocï¿½ nï¿½o volta?";
                 break;
             case 6:
-                TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "Não sente falta?";
+                TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "Nï¿½o sente falta?";
                 break;
             case 7:
-                TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "Isso é o que você queria?";
+                TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "Isso ï¿½ o que vocï¿½ queria?";
                 break;
             case 8:
-                TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "Na morte, eu descanso, mas o sangue anda solto. Manchando os papéis, documentos fiés.";
+                TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "Na morte, eu descanso, mas o sangue anda solto. Manchando os papï¿½is, documentos fiï¿½s.";
                 break;
             case 9:
-                TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "Os meus sonhos foram todos vendidos tão barato que eu nem acredito...";
+                TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "Os meus sonhos foram todos vendidos tï¿½o barato que eu nem acredito...";
                 break;
             case 10:
                 TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "Queria querer gritar setecentas mil vezes...";
                 break;
             case 11:
-                TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "Já podaram seus momentos, desviaram seu destino. Seu sorriso de menino, quantas vezes se escondeu?";
+                TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "Jï¿½ podaram seus momentos, desviaram seu destino. Seu sorriso de menino, quantas vezes se escondeu?";
                 break;
             case 12:
-                TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "E a cidade tem braços abertos num cartão postal, com punhos fechados na vida real. Lhes nega oportunidades, mostra a face do mal.";
+                TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "E a cidade tem braï¿½os abertos num cartï¿½o postal, com punhos fechados na vida real. Lhes nega oportunidades, mostra a face do mal.";
                 break;
             case 13:
                 TextoGameOver.GetComponent<TMPro.TextMeshProUGUI>().text = "Te trago mil rosas roubadas pra desculpar minhas mentiras.";
@@ -61,10 +61,10 @@ public class GameOverManager : MonoBehaviour
     }
     public void TentarDeNovo()
     {
-        SceneManager.LoadScene(MenuPrincipalManager.cenaRetorno);
+        SceneTransition.Instance.GoToScene(MenuPrincipalManager.cenaRetorno);
     }
     public void VoltarMenu()
     {
-        SceneManager.LoadScene(CenaMenuPrincipal);
+        SceneTransition.Instance.GoToScene(CenaMenuPrincipal);
     }
 }

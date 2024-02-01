@@ -46,6 +46,8 @@ public class GuiltMeter : MonoBehaviour
     {
         readingGuilt = false;
         shadow.GetComponent<ShadowMovement>().retreatShadow();
+        QTESystem.erros = 0;
+        QTESystem.i = 0;
     }
 
     private void CheckGuilt()
@@ -57,13 +59,17 @@ public class GuiltMeter : MonoBehaviour
         else if(actualGuilt == 1 && QTECount < 2)
         {
             readingGuilt = false;
+            AudioManager.Instance.sfxSource.Stop();
+            AudioManager.Instance.sfxcSource.Stop();
+            AudioManager.Instance.PlaySFX("QTE");
             QTE.GetComponent<QTESystem>().enabled = true;
         }
         else if (actualGuilt <= 0.0f)
         {
             AudioManager.Instance.sfxSource.Stop();
+            AudioManager.Instance.sfxcSource.Stop();
             MenuPrincipalManager.cenaRetorno = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene(CenaGameOver);
+            SceneTransition.Instance.GoToScene("Final_Scene");
         }
     }
 }

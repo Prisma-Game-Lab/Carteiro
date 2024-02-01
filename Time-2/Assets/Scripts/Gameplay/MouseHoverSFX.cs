@@ -7,17 +7,17 @@ public class MouseHoverSFX : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 {
     public void OnPointerClick(PointerEventData eventData)
     {
-        string[] sounds = { "Escrita1", "Escrita2" };
+        string[] sounds = { "Risco1", "Risco2", "Risco3" };
         string SFX = sounds[Random.Range(0, sounds.Length)];
         AudioManager.Instance.PlaySFX(SFX);
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
-        AudioManager.Instance.PlaySFX("ButtonHover");
+        AudioManager.Instance.PlaySFXC("ButtonHover");
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        AudioManager.Instance.sfxSource.Stop();
+        AudioManager.Instance.sfxcSource.Stop();
     }
 }

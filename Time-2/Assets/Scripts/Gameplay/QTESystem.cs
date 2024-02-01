@@ -26,14 +26,15 @@ public class QTESystem : MonoBehaviour
     [SerializeField] private float TempoParaApertar; // Alterar no editor, na duvida 1.0
 
 
-    private int i = 0;
-    private int erros = 0;
+    public static int i = 0;
+    public static int erros = 0;
 
     void Update()
     {
         if (erros == NErros)
         {
-            SceneManager.LoadScene(CenaDerrota);
+            MenuPrincipalManager.cenaRetorno = SceneManager.GetActiveScene().name;
+            SceneTransition.Instance.GoToScene(CenaDerrota);
         }
         if (i == NVezes)
         {
@@ -147,6 +148,7 @@ public class QTESystem : MonoBehaviour
 
     IEnumerator KeyPressing()
     {
+        AudioManager.Instance.PlaySFX("QTE");
         Tecla = 0;
         if (CorrectKey == 1)
         {

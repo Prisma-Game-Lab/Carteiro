@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph: {fileID: 21300000, guid: d2270d9888b15504fa03418ea86a85f4, type: 3}
   buttons:
-  - {x: 50, y: 96, z: 0}
+  - {x: 292, y: 168, z: 0}

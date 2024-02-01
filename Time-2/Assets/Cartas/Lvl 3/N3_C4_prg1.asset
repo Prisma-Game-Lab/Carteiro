@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: N3_C4_prg1
   m_EditorClassIdentifier: 
   paragraph: {fileID: 21300000, guid: 58adcd63b0ea1a74ea450aeaed92ca9e, type: 3}
-  buttons: []
+  buttons:
+  - {x: 0, y: 89, z: 0}
+  - {x: 292, y: 97, z: 0}
