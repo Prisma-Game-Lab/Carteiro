@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -31}
   m_SizeDelta: {x: 481, y: 379}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &11871003
@@ -236,7 +236,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 230.3}
+  m_SizeDelta: {x: 831, y: 230.3}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &129516574
 MonoBehaviour:
@@ -311,8 +311,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -70}
-  m_SizeDelta: {x: 700, y: 50}
+  m_AnchoredPosition: {x: 96.565, y: -67}
+  m_SizeDelta: {x: 637.87, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &174354283
 MonoBehaviour:
@@ -334,7 +334,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Fim de jogo - Voc\xEA foi consumido pelas sombras"
+  m_text: Fim de jogo - Poderia ter sido diferente...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d51644e265645dc4dbbaa639f23f70ae, type: 2}
   m_sharedMaterial: {fileID: -8859927107154951836, guid: d51644e265645dc4dbbaa639f23f70ae, type: 2}
@@ -367,7 +367,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -448,7 +448,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -65, y: -127.47}
+  m_AnchoredPosition: {x: -345, y: -293}
   m_SizeDelta: {x: 160, y: 64.24}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &194847800
@@ -823,7 +823,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -65.609985, y: -33.28}
+  m_AnchoredPosition: {x: -345, y: -212}
   m_SizeDelta: {x: 160, y: 64.24}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &577036512
@@ -847,8 +847,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.6543962, g: 1, b: 0.514151, a: 1}
-    m_HighlightedColor: {r: 0.4888196, g: 0.7169812, b: 0.39569244, a: 1}
+    m_NormalColor: {r: 0.62546647, g: 0.8490566, b: 0.53399783, a: 1}
+    m_HighlightedColor: {r: 0.43589565, g: 0.6132076, b: 0.36252522, a: 1}
     m_PressedColor: {r: 0.30569443, g: 0.4528302, b: 0.24563903, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1035,8 +1035,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8b4cb96f535b73e4d8b1e4ab88236348, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1308,7 +1308,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -279.39, y: -178.71999}
   m_SizeDelta: {x: 1100, y: 380}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1371562990
