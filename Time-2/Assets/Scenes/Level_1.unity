@@ -698,10 +698,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1376924319}
     m_Modifications:
-    - target: {fileID: 756878759839469920, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 756878760021290028, guid: 828073df0a8370b4db42cc9691d5f1c6, type: 3}
       propertyPath: PainelAjuda
       value: 
