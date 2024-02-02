@@ -862,8 +862,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 427990486}
         m_TargetAssemblyTypeName: ButtonToScene, Assembly-CSharp
-        m_MethodName: goToScene
-        m_Mode: 5
+        m_MethodName: backToScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
