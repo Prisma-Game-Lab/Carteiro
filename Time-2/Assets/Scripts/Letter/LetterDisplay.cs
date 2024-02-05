@@ -181,16 +181,19 @@ public class LetterDisplay : MonoBehaviour
         {
             if(LevelAtual == 1)
             {
+                LevelAtual = 0;
                 PlayerPrefs.SetInt("Level1Completo", 2);
-                SceneTransition.Instance.GoToScene(CenaLobby);
+                SceneTransition.Instance.GoToScene("Menu_Principal");
             }
             if(LevelAtual == 2)
             {
+                LevelAtual = 0;
                 PlayerPrefs.SetInt("Level2Completo", 2);
-                SceneTransition.Instance.GoToScene(CenaLobby);
+                SceneTransition.Instance.GoToScene("Menu_Principal");
             }
             if(LevelAtual == 3)
             {
+                LevelAtual = 0;
                 SceneTransition.Instance.GoToScene("Final_Scene");
             }
         }

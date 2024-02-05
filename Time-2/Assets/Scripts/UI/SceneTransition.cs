@@ -27,6 +27,7 @@ public class SceneTransition : MonoBehaviour
     {
         transitionAnim.SetTrigger("End");
         yield return new WaitForSeconds(1);
+        AudioManager.Instance.StopAllSFX();
         SceneManager.LoadScene(name);
         Debug.Log("Start Anim");
         transitionAnim.SetTrigger("Start");

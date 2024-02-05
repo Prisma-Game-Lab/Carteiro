@@ -2639,7 +2639,7 @@ MonoBehaviour:
   CenaVitoria: Vitoria
   CaixaCorreio: {fileID: 3192528576607185904, guid: 89101f8c912ca7d47a71d8852c357387, type: 3}
   CaixaSpawn: {fileID: 670104583}
-  LevelAtual: 0
+  LevelAtual: 1
 --- !u!114 &1966003695
 MonoBehaviour:
   m_ObjectHideFlags: 0

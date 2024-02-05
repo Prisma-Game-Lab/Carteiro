@@ -69,6 +69,12 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void StopAllSFX()
+    {
+        sfxSource.Stop();
+        sfxcSource.Stop();
+    }
+
     public void UIClick()
     {
         PlaySFX("CliqueUI");
