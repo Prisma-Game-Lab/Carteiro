@@ -182,18 +182,21 @@ public class LetterDisplay : MonoBehaviour
             if(LevelAtual == 1)
             {
                 LevelAtual = 0;
+                resetaCarta();
                 PlayerPrefs.SetInt("Level1Completo", 2);
                 SceneTransition.Instance.GoToScene("Level_Select");
             }
             if(LevelAtual == 2)
             {
                 LevelAtual = 0;
+                resetaCarta();
                 PlayerPrefs.SetInt("Level2Completo", 2);
                 SceneTransition.Instance.GoToScene("Level_Select");
             }
             if(LevelAtual == 3)
             {
                 LevelAtual = 0;
+                resetaCarta();
                 SceneTransition.Instance.GoToScene("Final_Scene");
             }
         }
@@ -208,7 +211,7 @@ public class LetterDisplay : MonoBehaviour
     //Funcao chamada quando o jogador perde, reinicia a carta na fase
     public void resetaCarta()
     {
-        destroiBotoes();
+        botoesDict.Clear();
 
         currentLetter = 0;
         inDisplay = 0;
