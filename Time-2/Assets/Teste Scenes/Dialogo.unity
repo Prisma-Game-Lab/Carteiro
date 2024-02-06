@@ -643,7 +643,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_list:
   - {fileID: 11400000, guid: 4aa1a06c14391ed46945d87d2c52e12e, type: 2}
-  - {fileID: 11400000, guid: 14710a28ca717164b8976bc8a12a7eb9, type: 2}
+  - {fileID: 11400000, guid: 659b501aec1335f438e32f20bfdcba04, type: 2}
+  - {fileID: 11400000, guid: 0107f2a684f2ff04e8f0c5bb07514b93, type: 2}
+  - {fileID: 11400000, guid: 1a6a92dad3076264d844bf8b45546e1c, type: 2}
   npc_image: {fileID: 1125005045}
   npc: {fileID: 247635727}
   dialogue: {fileID: 1984464217}
