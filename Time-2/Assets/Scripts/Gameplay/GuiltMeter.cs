@@ -69,7 +69,7 @@ public class GuiltMeter : MonoBehaviour
             AudioManager.Instance.sfxSource.Stop();
             AudioManager.Instance.sfxcSource.Stop();
             MenuPrincipalManager.cenaRetorno = SceneManager.GetActiveScene().name;
-            SceneTransition.Instance.GoToScene("Final_Scene");
+            SceneTransition.Instance.GoToScene("Game_Over");
         }
     }
 }
