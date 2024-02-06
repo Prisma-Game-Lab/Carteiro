@@ -15,5 +15,5 @@ MonoBehaviour:
   npc_image: {fileID: 21300000, guid: f489bcc3afbce994b8ddc4936910211e, type: 3}
   npc_name: Constantino
   dialogue_stream:
-  - "Finalmente voc\xEA chegou garoto, tava esperando a minha carta."
+  - "Finalmente voc\xEA chegou, garoto, tava esperando a minha carta."
   - "Passa logo pra c\xE1, t\xE1 no nome de Constantino."
