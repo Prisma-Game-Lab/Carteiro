@@ -33,6 +33,7 @@ public class QTESystem : MonoBehaviour
     {
         if (erros == NErros)
         {
+            erros = 0;
             MenuPrincipalManager.cenaRetorno = SceneManager.GetActiveScene().name;
             SceneTransition.Instance.GoToScene(CenaDerrota);
         }
