@@ -10,12 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81adfa07c56f49748afb9942e3608347, type: 3}
-  m_Name: Manuel_4
+  m_Name: Angela_2
   m_EditorClassIdentifier: 
-  npc_image: {fileID: 21300000, guid: 2e1b6f4c476221a4495b4d792a9343b6, type: 3}
-  npc_name: Manuel Grisaldo
+  npc_image: {fileID: 21300000, guid: 915c992bfe29f00499355afd7eb62c26, type: 3}
+  npc_name: "\xC2ngela"
   dialogue_stream:
-  - "Minha fam\xEDlia gosta das fotos que as mando do Brasil, mas n\xE3o das pessoas
-    com quem ando."
-  - "\xC0s vezes acho que eles n\xE3o me entendem, mas ainda sinto falta deles."
-  - "Como \xE9 para ti e tua fam\xEDlia?"
+  - Bom, chega de papo furado, tem alguma carta para mim? Do meu filho talvez?

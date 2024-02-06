@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81adfa07c56f49748afb9942e3608347, type: 3}
-  m_Name: Manuel_6
+  m_Name: Angela_1
   m_EditorClassIdentifier: 
-  npc_image: {fileID: 21300000, guid: 8e4f229701440f34fac337ecbd85b4be, type: 3}
-  npc_name: Manuel Grisaldo
+  npc_image: {fileID: 21300000, guid: 0b353d451eca03c44a4711da85d6e35b, type: 3}
+  npc_name: "\xC2ngela"
   dialogue_stream:
-  - "Enfim, vou-me agora. Voc\xEA parece abatido, n\xE3o esque\xE7a de repousar."
-  - "O dano a carta n\xE3o foi grave, ent\xE3o n\xE3o vou prestar queixa. Mas por
-    favor, n\xE3o fa\xE7a isso de novo. Adeus."
+  - "Boa Tarde! Ent\xE3o voc\xEA \xE9 o Carteiro de que tanto ouvi falar?"
+  - "Me parece um jovem bem arrumado. E eu adorei o que voc\xEA fez no cabelo! "
