@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81adfa07c56f49748afb9942e3608347, type: 3}
-  m_Name: Constantino_4
+  m_Name: Constantino_5
   m_EditorClassIdentifier: 
-  npc_image: {fileID: 21300000, guid: f489bcc3afbce994b8ddc4936910211e, type: 3}
+  npc_image: {fileID: 21300000, guid: 4fadbfc007b50df41b4c95e51a14d8a7, type: 3}
   npc_name: Constantino
   dialogue_stream:
-  - Vai dizer que tem algo que te assusta mais...
-  - "Olha s\xF3, vou deixar essa passar, vai embora daqui."
+  - "Mas n\xE3o esquece: se isso acontecer de novo, a cobra vai fumar!!"
