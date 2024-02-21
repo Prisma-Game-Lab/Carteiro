@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DialogueDisplay : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class DialogueDisplay : MonoBehaviour
     private int current_dialogue;
     private int current_dialogue_length;
     private int current_string; 
+
 
     // Start is called before the first frame update
     void Start()
@@ -70,6 +72,7 @@ public class DialogueDisplay : MonoBehaviour
         else
         {
             //TO DO: pedir ajuda pro Bento pra fazer a transicao de cena
+            SceneManager.LoadScene("Level_Select");
             print("Eu queria mudar eu queria mudar");
         }
     }
