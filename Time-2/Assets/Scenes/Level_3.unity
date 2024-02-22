@@ -2749,7 +2749,7 @@ MonoBehaviour:
   buttonPrefab: {fileID: 5740248797553913915, guid: 1fd583f921d485b4299b8023fb46f338, type: 3}
   paragraph: {fileID: 0}
   num_buttons: 0
-  lettersGuilt: 190000001400000014000000120000001200000017000000
+  lettersGuilt: 320000002d0000002d0000002d0000002800000032000000
   player: {fileID: 1929051816}
   CenaLobby: Menu_Principal
   CenaVitoria: Vitoria
