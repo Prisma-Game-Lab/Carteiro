@@ -184,20 +184,20 @@ public class LetterDisplay : MonoBehaviour
                 LevelAtual = 0;
                 resetaCarta();
                 PlayerPrefs.SetInt("Level1Completo", 2);
-                SceneTransition.Instance.GoToScene("Dialogue_1");
+                SceneTransition.Instance.GoToScene("Dialogo_1");
             }
             if(LevelAtual == 2)
             {
                 LevelAtual = 0;
                 resetaCarta();
                 PlayerPrefs.SetInt("Level2Completo", 2);
-                SceneTransition.Instance.GoToScene("Dialogue_2");
+                SceneTransition.Instance.GoToScene("Dialogo_2");
             }
             if(LevelAtual == 3)
             {
                 LevelAtual = 0;
                 resetaCarta();
-                SceneTransition.Instance.GoToScene("Dialogue_3");
+                SceneTransition.Instance.GoToScene("Dialogo_3");
             }
         }
     }
