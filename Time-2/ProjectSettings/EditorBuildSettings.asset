@@ -21,15 +21,30 @@ EditorBuildSettings:
     path: Assets/Scenes/Level_1.unity
     guid: 48c9d5328249f484292d23bd8964ee84
   - enabled: 1
+    path: Assets/Scenes/Dialogo_1.unity
+    guid: 642daa69efca5cf46a740c00d850e931
+  - enabled: 1
     path: Assets/Scenes/Level_2.unity
     guid: e9d30a09e5b44ad4eb4578f6e9248696
+  - enabled: 1
+    path: Assets/Scenes/Dialogo_2.unity
+    guid: b33ac17c5a49004429a269b4858c1dd8
   - enabled: 1
     path: Assets/Scenes/Level_3.unity
     guid: eb828d637bdda304eaee2f64097f680e
   - enabled: 1
+    path: Assets/Scenes/Dialogo_1.unity
+    guid: 642daa69efca5cf46a740c00d850e931
+  - enabled: 1
+    path: Assets/Scenes/Dialogo_2.unity
+    guid: b33ac17c5a49004429a269b4858c1dd8
+  - enabled: 1
+    path: Assets/Scenes/Dialogo_3.unity
+    guid: 2f46c01c069d47e48878a869789bf746
+  - enabled: 1
     path: Assets/Scenes/Final_Scene.unity
     guid: 006abd551b95d5e44b4371676722b4cc
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Creditos.unity
     guid: 1a21662f8ac769d4e9ae2896f27bbf8a
   - enabled: 0
